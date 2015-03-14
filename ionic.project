@@ -1,4 +1,12 @@
 {
   "name": "AzarMobile",
-  "app_id": ""
+  "app_id": "77d952f3",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
 }
