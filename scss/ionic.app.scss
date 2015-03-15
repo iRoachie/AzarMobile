@@ -14,11 +14,21 @@ $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
+$stable:                          #F3F3F3 !default;
+$positive:                        #4A90E2 !default;
+$list-header-font-weight:       700;
 
-$positive:                        teal !default;
+.scroll-content {
+  background-color: $stable;
+}
 
 $font-family-sans-serif: "Open Sans", sans-serif;
 
+.item-divider {
+  font-weight: $list-header-font-weight !important;
+  text-transform: uppercase;
+  font-size: 12px!important;
+}
 
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
