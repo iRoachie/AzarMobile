@@ -4,7 +4,6 @@ in ionic's _variables.scss file.
 
 For example, you might change some of the default colors:
 
-$light:                           #fff !default;
 $stable:                          #f8f8f8 !default;
 $positive:                        #387ef5 !default;
 $calm:                            #11c1f3 !default;
@@ -16,7 +15,11 @@ $dark:                            #444 !default;
 */
 $stable:                          #F3F3F3 !default;
 $positive:                        #4A90E2 !default;
+$light:                           #fff !default;
+
 $list-header-font-weight:       700;
+$header-font-weight:600;
+$header-font-size:30px;
 
 .scroll-content {
   background-color: $stable;
@@ -29,6 +32,30 @@ $font-family-sans-serif: "Open Sans", sans-serif;
   text-transform: uppercase;
   font-size: 12px!important;
 }
+
+#name-block {
+  background-color: $light;
+  padding-bottom:50px;
+
+  #names {
+    float:left;
+    width:80%;
+    padding-left:5%;
+    padding-top:30px;
+
+    font-weight:$header-font-weight;
+    font-size:$header-font-size;
+    #first {
+      padding-bottom:15px;
+    }
+  }
+  #settings-ribbon {
+    img{
+      width:10%;
+    }
+  }
+}
+
 
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;

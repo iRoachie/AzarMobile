@@ -8,6 +8,10 @@
         <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
         </button>
       </ion-nav-buttons>
+
+      <ion-nav-buttons side="right">
+        <a class="button button-icon icon ion-ios-refresh-empty"></a>
+      </ion-nav-buttons>
     </ion-nav-bar>
     <ion-nav-view name="menuContent"></ion-nav-view>
   </ion-side-menu-content>
@@ -15,18 +19,28 @@
   <ion-side-menu side="left">
     <ion-content>
       <ion-list>
-        <ion-item nav-clear menu-close ng-click="login()">
-          Login
+        <ion-item nav-clear menu-close href="#/app/home">
+          Home
         </ion-item>
-        <ion-item nav-clear menu-close href="#/app/search">
-          Search
+        <ion-item nav-clear menu-close href="#/app/news">
+          News
         </ion-item>
-        <ion-item nav-clear menu-close href="#/app/browse">
-          Browse
+        <ion-item nav-clear menu-close href="#/app/events">
+          Events
         </ion-item>
-        <ion-item nav-clear menu-close href="#/app/playlists">
-          Playlists
+        <ion-item nav-clear menu-close href="#/app/grades">
+          Grades
         </ion-item>
+        <ion-item nav-clear menu-close href="#/app/schedule">
+          Schedule
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/settings">
+          Settings
+        </ion-item>
+        <!-- <ion-item nav-clear menu-close ng-click="login()">
+          Home
+        </ion-item> -->
+
       </ion-list>
     </ion-content>
   </ion-side-menu>
