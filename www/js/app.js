@@ -47,6 +47,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
 
+    .state('app.news-item', {
+      url: "/news/news-item",
+      views: {
+        'menuContent': {
+          templateUrl: "templates/news-item.html"
+        }
+      }
+    })
+
     .state('app.events', {
       url: "/events",
       views: {
@@ -83,7 +92,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     })
 
     .state('app.profile', {
-      url: "/profile",
+      url: "/settings/profile",
       views: {
         'menuContent': {
           templateUrl: "templates/profile.html",

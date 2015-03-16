@@ -21,6 +21,20 @@ $dark:                            #444 !default;
   text-transform: uppercase;
   font-size: 12px !important; }
 
+.list-item-header {
+  font-weight: 700 !important;
+  font-size: 12px !important;
+  color: #444 !important; }
+
+.news-item {
+  top: 20px !important; }
+
+.list-item-title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 20px !important;
+  color: #909094; }
+
 #name-block {
   background-color: #fff;
   padding-bottom: 50px; }
