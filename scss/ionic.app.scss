@@ -13,118 +13,99 @@ $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
-$stable:                          #F3F3F3 !default;
-$positive:                        #4A90E2 !default;
-$light:                           #fff !default;
-$dark:                            #444 !default;
-$light-grey:#909094;
-
-
-$list-header-font-weight:       700;
-$header-font-weight:600;
-$header-font-size:30px;
-
+$stable: #f3f3f3 !default;
+$positive: #4a90e2 !default;
+$light: #fff !default;
+$dark: #444 !default;
+$light-grey: #909094;
+$list-header-font-weight: 700;
+$header-font-weight: 600;
+$header-font-size: 30px;
 $news-item-sub-font-weight: 700;
-
 .scroll-content {
   background-color: $stable;
 }
-
 $font-family-sans-serif: "Open Sans", sans-serif;
-
 .item-divider {
   font-weight: $list-header-font-weight !important;
   text-transform: uppercase;
   font-size: 12px!important;
 }
-
 .list-item-header {
   font-weight: $list-header-font-weight !important;
-  font-size: 12px!important;
-  color:$dark!important;
+  font-size: 11px!important;
+  color: $dark!important;
 }
-
-.news-arrow {
-  top:20px!important;
-}
-
-.news-item {
-
-.meta {
-  padding-left: 20px;
-  padding-top: 30px;
-  background-color:$light;
-
-  .category {
-    color: $positive;
-    font-weight:$list-header-font-weight;
-    text-transform:uppercase;
-  }
-
-  .title {
-    font-weight:300;
-    font-size:36px;
-    line-height:1.5;
-    padding-right: 20px;
-  }
-
-  .sender {
-    text-transform:uppercase;
-    font-weight:$news-item-sub-font-weight;
-
-  }
-
-  .date {
-    font-weight: $news-item-sub-font-weight;
-    color:$light-grey;
-    padding-bottom:10px;
-  }
-}
-
-.content {
-  padding: 0 20px;
-  font-size:18px;
-  line-height:1.5;
-}
-}
-
 .list-item-title {
-  font-family:$font-family-sans-serif;
-  font-weight:300;
-  font-size: 20px!important;
-  color:#909094;
+  font-family: $font-family-sans-serif;
+  font-weight: 300;
+  font-size: 16px!important;
+  color: #909094;
 }
-
+.news-arrow {
+  top: 20px!important;
+}
+.news-item {
+  .meta {
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color: $light;
+    .category {
+      color: $positive;
+      font-weight: $list-header-font-weight;
+      text-transform: uppercase;
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+    .title {
+      font-weight: 300;
+      font-size: 36px;
+      line-height: 1.5;
+      padding-right: 20px;
+    }
+    .sender {
+      text-transform: uppercase;
+      font-weight: $news-item-sub-font-weight;
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+    .date {
+      font-weight: $news-item-sub-font-weight;
+      color: $light-grey;
+      font-size: 12px;
+      padding-bottom: 10px;
+    }
+  }
+  .content {
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
 .news-content {
   margin-bot: 30px!important;
 }
-
 #name-block {
   background-color: $light;
-  padding-bottom:50px;
-
+  padding-bottom: 50px;
   #names {
-    float:left;
-    width:80%;
-    padding-left:5%;
-    padding-top:30px;
-
-    font-weight:$header-font-weight;
-    font-size:$header-font-size;
+    float: left;
+    width: 80%;
+    padding-left: 5%;
+    padding-top: 30px;
+    font-weight: $header-font-weight;
+    font-size: $header-font-size;
     #first {
-      padding-bottom:15px;
+      padding-bottom: 15px;
     }
   }
   #settings-ribbon {
-    img{
-      width:10%;
+    img {
+      width: 10%;
     }
   }
 }
-
-
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
-
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
