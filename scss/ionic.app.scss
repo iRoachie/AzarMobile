@@ -22,6 +22,16 @@ $list-header-font-weight: 700;
 $header-font-weight: 600;
 $header-font-size: 30px;
 $news-item-sub-font-weight: 700;
+#sidemenu-buff {
+  height: 200px;
+  background-color: $positive;
+  #logo {
+    margin:0 auto;
+    display: block;
+    width: 40%;
+    padding-top: 40px;
+  }
+}
 .scroll-content {
   background-color: $stable;
 }
