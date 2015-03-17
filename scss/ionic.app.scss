@@ -17,11 +17,14 @@ $stable:                          #F3F3F3 !default;
 $positive:                        #4A90E2 !default;
 $light:                           #fff !default;
 $dark:                            #444 !default;
+$light-grey:#909094;
 
 
 $list-header-font-weight:       700;
 $header-font-weight:600;
 $header-font-size:30px;
+
+$news-item-sub-font-weight: 700;
 
 .scroll-content {
   background-color: $stable;
@@ -41,8 +44,48 @@ $font-family-sans-serif: "Open Sans", sans-serif;
   color:$dark!important;
 }
 
-.news-item {
+.news-arrow {
   top:20px!important;
+}
+
+.news-item {
+
+.meta {
+  padding-left: 20px;
+  padding-top: 30px;
+  background-color:$light;
+
+  .category {
+    color: $positive;
+    font-weight:$list-header-font-weight;
+    text-transform:uppercase;
+  }
+
+  .title {
+    font-weight:300;
+    font-size:36px;
+    line-height:1.5;
+    padding-right: 20px;
+  }
+
+  .sender {
+    text-transform:uppercase;
+    font-weight:$news-item-sub-font-weight;
+
+  }
+
+  .date {
+    font-weight: $news-item-sub-font-weight;
+    color:$light-grey;
+    padding-bottom:10px;
+  }
+}
+
+.content {
+  padding: 0 20px;
+  font-size:18px;
+  line-height:1.5;
+}
 }
 
 .list-item-title {
@@ -50,6 +93,10 @@ $font-family-sans-serif: "Open Sans", sans-serif;
   font-weight:300;
   font-size: 20px!important;
   color:#909094;
+}
+
+.news-content {
+  margin-bot: 30px!important;
 }
 
 #name-block {

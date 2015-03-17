@@ -26,14 +26,42 @@ $dark:                            #444 !default;
   font-size: 12px !important;
   color: #444 !important; }
 
-.news-item {
+.news-arrow {
   top: 20px !important; }
+
+.news-item .meta {
+  padding-left: 20px;
+  padding-top: 30px;
+  background-color: #fff; }
+  .news-item .meta .category {
+    color: #4A90E2;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .news-item .meta .title {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 1.5;
+    padding-right: 20px; }
+  .news-item .meta .sender {
+    text-transform: uppercase;
+    font-weight: 700; }
+  .news-item .meta .date {
+    font-weight: 700;
+    color: #909094;
+    padding-bottom: 10px; }
+.news-item .content {
+  padding: 0 20px;
+  font-size: 18px;
+  line-height: 1.5; }
 
 .list-item-title {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 20px !important;
   color: #909094; }
+
+.news-content {
+  margin-bot: 30px !important; }
 
 #name-block {
   background-color: #fff;
