@@ -1,31 +1,21 @@
 # AzarMobile
 =============
-OPERATING GIT
+ASSIGNMENTS
 =============
-==============
-SAVING CHANGES
-==============
-CLONE: git clone https://github.com/iRoachie/AzarMobile.git
+ + Theodore : Events.html
+   - create your own branch to Azarmobile (https://www.youtube.com/watch?v=uR-9NGrpU-c)
+   - copy the news.html content into events.html
+   - study the code 
+   - modify its link so that it does not go to the news-items but to an action sheet
+   - just have fun trying to make it more. #play with the html
+   - Thursday we will merge
+   
+ + Kyle : Our Diagrams
+   - Please edit and ensure that all our diagrams are complete. 
+   - FAD -> SRS -> DESIGN -> DEV & TESTING (Current Stage)
+   - Try whipping up a grades and schedule design in sketch.
 
-FILES STATUS: go to project directory and command git status: it checks for changes
-
-ADD YOUR CHANGES: git add index.html|.(will all files in the directory)|-A (will add all files in the directory)
-
-+ Example
--------
-git add .
-git add -A
-git add index.html
-
-RECHECK FILE STATUS: check the status of your request by command git status
-
-COMMIT CHANGES (lock in changes on local repository): git commit -m "added index.html"
-
-PUSH CHANGES TO SERVER: git push 
-
-===============
-LOADING CHANGES
-===============
-//Ensure your are in your project directory when you run the following commands
-PULL CHANGES FROM SERVER: git pull
-
+ + Joshua: Assist Theodore
+   - In addition, get your github account setup, Ionic and Cordova. 
+   - Try to fix your Slack profile. 
+   
