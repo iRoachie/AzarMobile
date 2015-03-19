@@ -41,9 +41,6 @@ $dark:                            #444 !default;
   font-size: 16px !important;
   color: #909094; }
 
-.news-arrow {
-  top: 20px !important; }
-
 .news-item .meta {
   padding-left: 20px;
   padding-top: 20px;
@@ -76,6 +73,9 @@ $dark:                            #444 !default;
 
 .news-content {
   margin-bot: 30px !important; }
+
+.news-arrow {
+  font-size: 20px !important; }
 
 #name-block {
   background-color: #fff;
