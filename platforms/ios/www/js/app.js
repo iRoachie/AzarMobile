@@ -55,6 +55,32 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
+  
+    .state('app.news-item2', {
+      url: "/news/news-item2",
+      views: {
+        'menuContent': {
+          templateUrl: "templates/news-item2.html"
+        }
+      }
+    })
+    .state('app.news-item3', {
+      url: "/news/news-item3",
+      views: {
+        'menuContent': {
+          templateUrl: "templates/news-item3.html"
+        }
+      }
+    })
+    .state('app.news-item4', {
+      url: "/news/news-item4",
+      views: {
+        'menuContent': {
+          templateUrl: "templates/news-item4.html"
+        }
+      }
+    })
+  
 
     .state('app.events', {
       url: "/events",

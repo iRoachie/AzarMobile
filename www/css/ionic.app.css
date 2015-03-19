@@ -20,7 +20,7 @@ $dark:                            #444 !default;
     margin: 0 auto;
     display: block;
     width: 40%;
-    padding-top: 40px; }
+    padding-top: 45px; }
 
 .scroll-content {
   background-color: #f3f3f3; }
@@ -28,7 +28,7 @@ $dark:                            #444 !default;
 .item-divider {
   font-weight: 700 !important;
   text-transform: uppercase;
-  font-size: 12px !important; }
+  font-size: 11px !important; }
 
 .list-item-header {
   font-weight: 700 !important;
@@ -41,9 +41,12 @@ $dark:                            #444 !default;
   font-size: 16px !important;
   color: #909094; }
 
+<<<<<<< HEAD
 .news-arrow {
   top: 20px !important; }
 
+=======
+>>>>>>> kyle
 .news-item .meta {
   padding-left: 20px;
   padding-top: 20px;
@@ -76,6 +79,12 @@ $dark:                            #444 !default;
 
 .news-content {
   margin-bot: 30px !important; }
+<<<<<<< HEAD
+=======
+
+.news-arrow {
+  font-size: 20px !important; }
+>>>>>>> kyle
 
 #name-block {
   background-color: #fff;
@@ -91,6 +100,25 @@ $dark:                            #444 !default;
       padding-bottom: 15px; }
   #name-block #settings-ribbon img {
     width: 10%; }
+
+.title-center {
+  font-weight: 600 !important; }
+
+.item-note.grade {
+  color: #4a90e2 !important;
+  font-weight: 700 !important; }
+
+.schedule-page {
+  background-color: white; }
+  .schedule-page .schedule-item .color {
+    height: 54px;
+    float: left;
+    width: 5%;
+    background-color: #E4E4E4; }
+  .schedule-page .schedule-item .time {
+    float: left; }
+  .schedule-page .schedule-item .text {
+    margin-left: 30% !important; }
 
 /*!
   Ionicons, v2.0.1
