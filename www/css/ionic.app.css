@@ -13,11 +13,10 @@ $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
-
 #sidemenu-buff {
   height: 200px;
   background-color: #4a90e2; }
-#sidemenu-buff #logo {
+  #sidemenu-buff #logo {
     margin: 0 auto;
     display: block;
     width: 40%;
@@ -42,8 +41,8 @@ $dark:                            #444 !default;
   font-size: 16px !important;
   color: #909094; }
 
-.news-arrow {    
-  top: 30px !important; }
+.news-arrow {
+  top: 20px !important; }
 
 .news-item .meta {
   padding-left: 20px;
@@ -73,25 +72,24 @@ $dark:                            #444 !default;
 .news-item .content {
   padding: 0 20px;
   font-size: 16px;
-  line-height: 1.5;
-}
+  line-height: 1.5; }
 
 .news-content {
-   margin-bot: 30px !important;}
+  margin-bot: 30px !important; }
 
 #name-block {
   background-color: #fff;
   padding-bottom: 50px; }
-#name-block #names {
+  #name-block #names {
     float: left;
     width: 80%;
     padding-left: 5%;
     padding-top: 30px;
     font-weight: 600;
     font-size: 30px; }
-#name-block #names #first {
-    padding-bottom: 15px; }
-#name-block #settings-ribbon img {
+    #name-block #names #first {
+      padding-bottom: 15px; }
+  #name-block #settings-ribbon img {
     width: 10%; }
 
 /*!
@@ -180,7 +178,6 @@ $dark:                            #444 !default;
   content: "\f364"; }
 
 .ion-android-arrow-forward:before {
-    color:crimson;
   content: "\f30f"; }
 
 .ion-android-arrow-up:before {
@@ -3261,7 +3258,6 @@ a.subdued {
       padding-right: 2px;
       padding-left: 2px;
       font-size: 20px;
-      color: aqua;
       line-height: 32px; }
     .bar .button.button-icon {
       font-size: 17px; }
@@ -3373,7 +3369,6 @@ a.subdued {
     font-size: 17px; }
   .bar-positive .button.button-icon {
     border-color: transparent;
-    
     background: none; }
 
 .bar-calm .button {
@@ -6860,8 +6855,7 @@ progress {
   padding: 0 6px;
   min-width: initial;
   border-color: transparent;
-  background: none; 
-}
+  background: none; }
   .button-icon.button.active, .button-icon.button.activated {
     border-color: transparent;
     background: none;
