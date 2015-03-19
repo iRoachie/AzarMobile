@@ -39,7 +39,7 @@ $font-family-sans-serif: "Open Sans", sans-serif;
 .item-divider {
   font-weight: $list-header-font-weight !important;
   text-transform: uppercase;
-  font-size: 12px!important;
+  font-size: 11px!important;
 }
 .list-item-header {
   font-weight: $list-header-font-weight !important;
@@ -115,6 +115,7 @@ $font-family-sans-serif: "Open Sans", sans-serif;
     }
   }
 }
+
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
