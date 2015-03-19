@@ -92,6 +92,13 @@ $dark:                            #444 !default;
   #name-block #settings-ribbon img {
     width: 10%; }
 
+.title-center {
+  font-weight: 600 !important; }
+
+.item-note.grade {
+  color: #4a90e2 !important;
+  font-weight: 700 !important; }
+
 /*!
   Ionicons, v2.0.1
   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/

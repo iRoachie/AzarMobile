@@ -29,7 +29,7 @@ $news-item-sub-font-weight: 700;
     margin:0 auto;
     display: block;
     width: 40%;
-    padding-top: 40px;
+    padding-top: 45px;
   }
 }
 .scroll-content {
@@ -115,6 +115,33 @@ $font-family-sans-serif: "Open Sans", sans-serif;
       width: 10%;
     }
   }
+}
+
+.title-center {
+  font-weight: 600!important;
+}
+
+.item-note.grade {
+  color:$positive!important;
+  font-weight:700!important;
+}
+
+.schedule-page {
+  background-color:white;
+.schedule-item {
+  .color {
+    height:54px;
+    float: left;
+    width:5%;
+    background-color:#E4E4E4;
+  }
+  .time {
+    float:left;
+  }
+  .text {
+    margin-left:30%!important;
+  }
+}
 }
 
 // The path for our ionicons font files, relative to the built CSS in www/css
