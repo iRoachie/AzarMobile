@@ -101,15 +101,35 @@ $dark:                            #444 !default;
 
 .schedule-page {
   background-color: white; }
-  .schedule-page .schedule-item .color {
-    height: 54px;
-    float: left;
-    width: 5%;
-    background-color: #E4E4E4; }
-  .schedule-page .schedule-item .time {
-    float: left; }
-  .schedule-page .schedule-item .text {
-    margin-left: 30% !important; }
+  .schedule-page .schedule-item {
+    padding-left: 110px; }
+    .schedule-page .schedule-item .time {
+      position: absolute;
+      left: 25px;
+      top: 6px; }
+    .schedule-page .schedule-item .separator {
+      height: 54px;
+      position: absolute;
+      width: 1px;
+      background-color: #909094;
+      top: 0;
+      left: 95px; }
+    .schedule-page .schedule-item .circle {
+      position: absolute;
+      border-radius: 50%;
+      background-color: white;
+      border: 1px solid #909094;
+      width: 20px;
+      height: 20px;
+      left: 85px; }
+    .schedule-page .schedule-item .color {
+      height: 54px;
+      min-width: 1px;
+      width: 5%;
+      margin-left: -10px;
+      margin-top: -10px;
+      border: none;
+      padding: 0; }
 
 /*!
   Ionicons, v2.0.1
