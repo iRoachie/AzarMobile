@@ -54,6 +54,7 @@
 /Users/kyle/Desktop/AzarMobile/platforms/android/assets/www/css/ionic.app.min.css \
 /Users/kyle/Desktop/AzarMobile/platforms/android/assets/www/css/style.css \
 /Users/kyle/Desktop/AzarMobile/platforms/android/assets/www/img/ionic.png \
+/Users/kyle/Desktop/AzarMobile/platforms/android/assets/www/img/logo.png \
 /Users/kyle/Desktop/AzarMobile/platforms/android/assets/www/img/ribbon-grey.png \
 /Users/kyle/Desktop/AzarMobile/platforms/android/assets/www/js/app.js \
 /Users/kyle/Desktop/AzarMobile/platforms/android/assets/www/js/controllers.js \
@@ -88,10 +89,14 @@
 /Users/kyle/Desktop/AzarMobile/platforms/android/assets/www/lib/ionic/js/angular-ui/angular-ui-router.min.js \
 /Users/kyle/Desktop/AzarMobile/platforms/android/assets/www/plugins/com.ionic.keyboard \
 /Users/kyle/Desktop/AzarMobile/platforms/android/assets/www/plugins/org.apache.cordova.device \
+/Users/kyle/Desktop/AzarMobile/platforms/android/assets/www/plugins/org.apache.cordova.statusbar \
 /Users/kyle/Desktop/AzarMobile/platforms/android/assets/www/plugins/com.ionic.keyboard/www \
 /Users/kyle/Desktop/AzarMobile/platforms/android/assets/www/plugins/com.ionic.keyboard/www/keyboard.js \
 /Users/kyle/Desktop/AzarMobile/platforms/android/assets/www/plugins/org.apache.cordova.device/www \
 /Users/kyle/Desktop/AzarMobile/platforms/android/assets/www/plugins/org.apache.cordova.device/www/device.js \
+/Users/kyle/Desktop/AzarMobile/platforms/android/assets/www/plugins/org.apache.cordova.statusbar/www \
+/Users/kyle/Desktop/AzarMobile/platforms/android/assets/www/plugins/org.apache.cordova.statusbar/www/statusbar.js \
+/Users/kyle/Desktop/AzarMobile/platforms/android/assets/www/templates/course.html \
 /Users/kyle/Desktop/AzarMobile/platforms/android/assets/www/templates/events.html \
 /Users/kyle/Desktop/AzarMobile/platforms/android/assets/www/templates/grades.html \
 /Users/kyle/Desktop/AzarMobile/platforms/android/assets/www/templates/home.html \

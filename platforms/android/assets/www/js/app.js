@@ -15,7 +15,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
     if (window.StatusBar) {
       // org.apache.cordova.statusbar required
-      StatusBar.styleDefault();
+      StatusBar.UIStatusBarStyleLightContent();
     }
   });
 })
@@ -78,7 +78,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: "/schedule",
       views: {
         'menuContent': {
-          templateUrl: "templates/schedule.html"
+          templateUrl: "templates/schedule.html",
+          controller: "CourseCtrl"
         }
       }
     })

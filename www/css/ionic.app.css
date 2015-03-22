@@ -136,20 +136,22 @@ $dark:                            #444 !default;
   background-color: #f3f3f3 !important; }
   .courseInfo .header {
     background-color: #4a90e2;
-    height: 160px !important;
-    padding-left: 20px; }
+    height: 180px !important;
+    padding-left: 20px;
+    padding-right: 20px; }
     .courseInfo .header .close {
       position: absolute;
-      top: 20px;
+      top: 30px;
       color: white;
       font-size: 16px; }
     .courseInfo .header .className {
       position: absolute;
-      top: 60px;
+      top: 80px;
       font-size: 30px;
       line-height: 1.4;
       font-weight: 600;
-      color: white; }
+      color: white;
+      padding-right: inherit; }
   .courseInfo .info {
     background-color: white;
     padding-left: 20px;

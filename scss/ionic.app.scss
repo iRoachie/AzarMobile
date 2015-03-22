@@ -164,21 +164,23 @@ $font-family-sans-serif: "Open Sans", sans-serif;
   background-color: $stable!important;
   .header {
     background-color: $positive;
-    height: 160px!important;
+    height: 180px!important;
     padding-left: 20px;
+    padding-right:20px;
     .close {
       position: absolute;
-      top: 20px;
+      top: 30px;
       color: white;
       font-size: 16px;
     }
     .className {
       position: absolute;
-      top: 60px;
+      top: 80px;
       font-size: $header-font-size;
       line-height: 1.4;
       font-weight: $header-font-weight;
       color: white;
+      padding-right:inherit;
     }
   }
   .info {

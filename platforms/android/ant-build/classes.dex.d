@@ -11,4 +11,8 @@
 /Users/kyle/Desktop/AzarMobile/platforms/android/ant-build/classes/com/ionicframework/azarmobile708695/R$xml.class \
 /Users/kyle/Desktop/AzarMobile/platforms/android/ant-build/classes/com/ionicframework/azarmobile708695/R.class \
 /Users/kyle/Desktop/AzarMobile/platforms/android/ant-build/classes/org/apache/cordova/device/Device.class \
+/Users/kyle/Desktop/AzarMobile/platforms/android/ant-build/classes/org/apache/cordova/statusbar/StatusBar$1.class \
+/Users/kyle/Desktop/AzarMobile/platforms/android/ant-build/classes/org/apache/cordova/statusbar/StatusBar$2.class \
+/Users/kyle/Desktop/AzarMobile/platforms/android/ant-build/classes/org/apache/cordova/statusbar/StatusBar$3.class \
+/Users/kyle/Desktop/AzarMobile/platforms/android/ant-build/classes/org/apache/cordova/statusbar/StatusBar.class \
 /Users/kyle/Desktop/AzarMobile/platforms/android/ant-build/dexedLibs/classes-2400d050db5806fe87d92bdb87aff9e1.jar \
