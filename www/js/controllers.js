@@ -34,5 +34,21 @@ angular.module('starter.controllers', [])
 })
 
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
-});
+.controller('CourseCtrl', function($scope, $ionicModal) {
+  // Create the login modal that we will use later
+  $ionicModal.fromTemplateUrl('templates/course.html', {
+    scope: $scope
+  }).then(function(modal) {
+    $scope.modal = modal;
+  });
+
+  // Triggered in the login modal to close it
+  $scope.closeInfo = function() {
+    $scope.modal.hide();
+  };
+
+  // Open the login modal
+  $scope.courseInfo = function() {
+    $scope.modal.show();
+  };
+})

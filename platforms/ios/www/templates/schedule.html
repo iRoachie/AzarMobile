@@ -1,9 +1,21 @@
 <ion-view view-title="Schedule">
-  <ion-content>
-    <!-- <ion-list>
-      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
-        {{playlist.title}}
-      </ion-item>
-    </ion-list> -->
+  <ion-content class="schedule-page">
+    <ion-list>
+      <a class="item item-button-left schedule-item" ng-click="courseInfo()">
+        <div class="time">
+          <p>
+            8:00 am
+          </p>
+          <p>
+            9:15 am
+          </p>
+        </div>
+        <div class="separator"></div>
+        <div class="circle"></div>
+        Programming Languages
+        <button class="button button-lightgrey color"></button>
+      </a>
+
+    </ion-list>
   </ion-content>
 </ion-view>

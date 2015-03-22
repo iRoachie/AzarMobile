@@ -22,11 +22,12 @@ $list-header-font-weight: 700;
 $header-font-weight: 600;
 $header-font-size: 30px;
 $news-item-sub-font-weight: 700;
+$font-family-sans-serif: "Open Sans", sans-serif;
 #sidemenu-buff {
   height: 200px;
   background-color: $positive;
   #logo {
-    margin:0 auto;
+    margin: 0 auto;
     display: block;
     width: 40%;
     padding-top: 45px;
@@ -35,7 +36,6 @@ $news-item-sub-font-weight: 700;
 .scroll-content {
   background-color: $stable;
 }
-$font-family-sans-serif: "Open Sans", sans-serif;
 .item-divider {
   font-weight: $list-header-font-weight !important;
   text-transform: uppercase;
@@ -52,7 +52,6 @@ $font-family-sans-serif: "Open Sans", sans-serif;
   font-size: 16px!important;
   color: #909094;
 }
-
 .news-item {
   .meta {
     padding-left: 20px;
@@ -94,7 +93,7 @@ $font-family-sans-serif: "Open Sans", sans-serif;
   margin-bot: 30px!important;
 }
 .news-arrow {
-  font-size:20px!important;
+  font-size: 20px!important;
 }
 #name-block {
   background-color: $light;
@@ -116,34 +115,119 @@ $font-family-sans-serif: "Open Sans", sans-serif;
     }
   }
 }
-
 .title-center {
   font-weight: 600!important;
 }
-
 .item-note.grade {
-  color:$positive!important;
-  font-weight:700!important;
+  color: $positive!important;
+  font-weight: 700!important;
 }
-
 .schedule-page {
-  background-color:white;
-.schedule-item {
-  .color {
-    height:54px;
-    float: left;
-    width:5%;
-    background-color:#E4E4E4;
-  }
-  .time {
-    float:left;
-  }
-  .text {
-    margin-left:30%!important;
+  background-color: white;
+  .schedule-item {
+    padding-left: 110px;
+    .time {
+      position: absolute;
+      left: 25px;
+      top: 6px;
+    }
+    .separator {
+      height: 54px;
+      position: absolute;
+      width: 1px;
+      background-color: $light-grey;
+      top: 0;
+      left: 95px;
+    }
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      background-color: white;
+      border: 1px solid $light-grey;
+      width: 20px;
+      height: 20px;
+      left: 85px;
+    }
+    .color {
+      height: 54px;
+      min-width: 1px;
+      width: 16px;
+      margin-left: -10px;
+      margin-top: -10px;
+      border: none;
+      padding: 0;
+    }
   }
 }
-}
+.courseInfo {
+  padding-top:0!important;
+  background-color: $stable!important;
+  .header {
+    background-color: $positive;
+    height: 160px!important;
+    padding-left: 20px;
+    .close {
+      position: absolute;
+      top: 20px;
+      color: white;
+      font-size: 16px;
+    }
+    .className {
+      position: absolute;
+      top: 60px;
+      font-size: $header-font-size;
+      line-height: 1.4;
+      font-weight: $header-font-weight;
+      color: white;
+    }
+  }
+  .info {
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 30px;
+    .classLabel {
+      font-weight: 400;
+      font-size: 18px;
+    }
+    .time {
+      padding-top: 15px;
+      padding-bottom: 20px;
+      .ion-ios-alarm-outline {
+        font-size: 24px;
+      }
+      .time {
+        margin-left: 30px;
+        margin-top: -40px;
+        .days {
+          margin-top: -10px;
+        }
+      }
+    }
+    .location {
+      margin-top: -30px;
+      padding-bottom: 10px;
+      .ion-ios-location-outline {
+        font-size: 24px;
+      }
+      .building {
+        margin-left: 30px;
+        margin-top: -25px;
+      }
+    }
 
+    .lecturer {
+      padding-bottom: 10px;
+
+      .ion-ios-glasses-outline {
+        font-size:24px;
+      }
+      .name {
+        margin-left: 30px;
+        margin-top: -25px;
+      }
+    }
+  }
+}
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
