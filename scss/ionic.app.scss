@@ -22,6 +22,7 @@ $list-header-font-weight: 700;
 $header-font-weight: 600;
 $header-font-size: 30px;
 $news-item-sub-font-weight: 700;
+$font-family-sans-serif: "Open Sans", sans-serif;
 #sidemenu-buff {
   height: 200px;
   background-color: $positive;
@@ -35,7 +36,6 @@ $news-item-sub-font-weight: 700;
 .scroll-content {
   background-color: $stable;
 }
-$font-family-sans-serif: "Open Sans", sans-serif;
 .item-divider {
   font-weight: $list-header-font-weight !important;
   text-transform: uppercase;
@@ -140,13 +140,13 @@ $font-family-sans-serif: "Open Sans", sans-serif;
       left: 95px;
     }
     .circle {
-      position:absolute;
+      position: absolute;
       border-radius: 50%;
-      background-color:white;
+      background-color: white;
       border: 1px solid $light-grey;
-      width:20px;
-      height:20px;
-      left:85px;
+      width: 20px;
+      height: 20px;
+      left: 85px;
     }
     .color {
       height: 54px;
@@ -156,6 +156,75 @@ $font-family-sans-serif: "Open Sans", sans-serif;
       margin-top: -10px;
       border: none;
       padding: 0;
+    }
+  }
+}
+.courseInfo {
+  padding-top:0!important;
+  background-color: $stable!important;
+  .header {
+    background-color: $positive;
+    height: 160px!important;
+    padding-left: 20px;
+    .close {
+      position: absolute;
+      top: 20px;
+      color: white;
+      font-size: 16px;
+    }
+    .className {
+      position: absolute;
+      top: 60px;
+      font-size: $header-font-size;
+      line-height: 1.4;
+      font-weight: $header-font-weight;
+      color: white;
+    }
+  }
+  .info {
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 30px;
+    .classLabel {
+      font-weight: 400;
+      font-size: 18px;
+    }
+    .time {
+      padding-top: 15px;
+      padding-bottom: 20px;
+      .ion-ios-alarm-outline {
+        font-size: 24px;
+      }
+      .time {
+        margin-left: 30px;
+        margin-top: -40px;
+        .days {
+          margin-top: -10px;
+        }
+      }
+    }
+    .location {
+      margin-top: -30px;
+      padding-bottom: 10px;
+      .ion-ios-location-outline {
+        font-size: 24px;
+      }
+      .building {
+        margin-left: 30px;
+        margin-top: -25px;
+      }
+    }
+
+    .lecturer {
+      padding-bottom: 10px;
+
+      .ion-ios-glasses-outline {
+        font-size:24px;
+      }
+      .name {
+        margin-left: 30px;
+        margin-top: -25px;
+      }
     }
   }
 }

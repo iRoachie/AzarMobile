@@ -131,6 +131,58 @@ $dark:                            #444 !default;
       border: none;
       padding: 0; }
 
+.courseInfo {
+  padding-top: 0 !important;
+  background-color: #f3f3f3 !important; }
+  .courseInfo .header {
+    background-color: #4a90e2;
+    height: 160px !important;
+    padding-left: 20px; }
+    .courseInfo .header .close {
+      position: absolute;
+      top: 20px;
+      color: white;
+      font-size: 16px; }
+    .courseInfo .header .className {
+      position: absolute;
+      top: 60px;
+      font-size: 30px;
+      line-height: 1.4;
+      font-weight: 600;
+      color: white; }
+  .courseInfo .info {
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 30px; }
+    .courseInfo .info .classLabel {
+      font-weight: 400;
+      font-size: 18px; }
+    .courseInfo .info .time {
+      padding-top: 15px;
+      padding-bottom: 20px; }
+      .courseInfo .info .time .ion-ios-alarm-outline {
+        font-size: 24px; }
+      .courseInfo .info .time .time {
+        margin-left: 30px;
+        margin-top: -40px; }
+        .courseInfo .info .time .time .days {
+          margin-top: -10px; }
+    .courseInfo .info .location {
+      margin-top: -30px;
+      padding-bottom: 10px; }
+      .courseInfo .info .location .ion-ios-location-outline {
+        font-size: 24px; }
+      .courseInfo .info .location .building {
+        margin-left: 30px;
+        margin-top: -25px; }
+    .courseInfo .info .lecturer {
+      padding-bottom: 10px; }
+      .courseInfo .info .lecturer .ion-ios-glasses-outline {
+        font-size: 24px; }
+      .courseInfo .info .lecturer .name {
+        margin-left: 30px;
+        margin-top: -25px; }
+
 /*!
   Ionicons, v2.0.1
   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
