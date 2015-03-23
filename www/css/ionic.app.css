@@ -185,6 +185,53 @@ $dark:                            #444 !default;
         margin-left: 30px;
         margin-top: -25px; }
 
+.login {
+  background-image: url("../img/login-background.png");
+  background-position: center; }
+  .login .closelogin {
+    color: white;
+    display: absolute;
+    font-size: 60px;
+    top: 20px;
+    left: 10px; }
+  .login .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    margin-top: 50px; }
+  .login .form {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    width: 80%; }
+    .login .form .list {
+      background-color: transparent; }
+      .login .form .list #idnumber {
+        border-bottom: 1px solid white; }
+      .login .form .list label {
+        background-color: inherit;
+        border: none;
+        padding-left: 0;
+        padding-right: 0; }
+        .login .form .list label ::-webkit-input-placeholder {
+          /* WebKit browsers */
+          color: white; }
+        .login .form .list label :-moz-placeholder {
+          /* Mozilla Firefox 4 to 18 */
+          color: white;
+          opacity: 1; }
+        .login .form .list label ::-moz-placeholder {
+          /* Mozilla Firefox 19+ */
+          color: white;
+          opacity: 1; }
+        .login .form .list label :-ms-input-placeholder {
+          /* Internet Explorer 10+ */
+          color: white; }
+        .login .form .list label input {
+          color: white;
+          font-size: 16px; }
+
 /*!
   Ionicons, v2.0.1
   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/

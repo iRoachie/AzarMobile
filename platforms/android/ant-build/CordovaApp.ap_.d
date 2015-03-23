@@ -54,6 +54,7 @@
 /Users/kyle/Desktop/AzarMobile/platforms/android/assets/www/css/ionic.app.min.css \
 /Users/kyle/Desktop/AzarMobile/platforms/android/assets/www/css/style.css \
 /Users/kyle/Desktop/AzarMobile/platforms/android/assets/www/img/ionic.png \
+/Users/kyle/Desktop/AzarMobile/platforms/android/assets/www/img/login-background.png \
 /Users/kyle/Desktop/AzarMobile/platforms/android/assets/www/img/logo.png \
 /Users/kyle/Desktop/AzarMobile/platforms/android/assets/www/img/ribbon-grey.png \
 /Users/kyle/Desktop/AzarMobile/platforms/android/assets/www/js/app.js \
