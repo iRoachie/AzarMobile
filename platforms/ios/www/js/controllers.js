@@ -20,6 +20,8 @@ angular.module('starter.controllers', [])
   // Open the login modal
   $scope.login = function() {
     $scope.modal.show();
+    $scope.loginData.username = "";
+    $scope.loginData.password = "";
   };
 
   //Log in failed

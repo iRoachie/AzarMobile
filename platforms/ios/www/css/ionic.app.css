@@ -13,6 +13,9 @@ $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
+ion-content {
+  font-family: "Open Sans", sans-serif; }
+
 #sidemenu-buff {
   height: 200px;
   background-color: #4a90e2; }
@@ -231,6 +234,46 @@ $dark:                            #444 !default;
         .login .form .list label input {
           color: white;
           font-size: 16px; }
+
+.home-content {
+  padding-top: 20px !important; }
+  .home-content .next-up-arrow {
+    width: 130px; }
+  .home-content .class .courseCode {
+    font-size: 30px;
+    color: black; }
+  .home-content .class .grey-arrow {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 30px; }
+  .home-content .class .details {
+    margin-top: 15px; }
+  .home-content .event .date {
+    float: left;
+    width: 50%;
+    border: none;
+    border-right: 1px solid #C7C7CC;
+    border-radius: 0 !important; }
+    .home-content .event .date .month {
+      text-transform: uppercase;
+      color: #d0021b;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      font-weight: 700;
+      margin-top: -10px; }
+    .home-content .event .date .date {
+      margin: 15px auto;
+      text-align: center;
+      border-right: none;
+      width: 100%;
+      font-size: 60px;
+      color: black; }
+  .home-content .event .details {
+    float: left;
+    width: 50%;
+    border: none; }
 
 /*!
   Ionicons, v2.0.1

@@ -23,6 +23,9 @@ $header-font-weight: 600;
 $header-font-size: 30px;
 $news-item-sub-font-weight: 700;
 $font-family-sans-serif: "Open Sans", sans-serif;
+ion-content {
+  font-family: $font-family-sans-serif;
+}
 #sidemenu-buff {
   height: 200px;
   background-color: $positive;
@@ -243,12 +246,12 @@ $font-family-sans-serif: "Open Sans", sans-serif;
     margin-left: auto;
     margin-right: auto;
     width: 30%;
-    margin-top:50px;
+    margin-top: 50px;
   }
   .form {
     margin-left: auto;
     margin-right: auto;
-    margin-top:40px;
+    margin-top: 40px;
     width: 80%;
     .list {
       background-color: transparent;
@@ -257,9 +260,9 @@ $font-family-sans-serif: "Open Sans", sans-serif;
       }
       label {
         background-color: inherit;
-        border:none;
-        padding-left:0;
-        padding-right:0;
+        border: none;
+        padding-left: 0;
+        padding-right: 0;
         ::-webkit-input-placeholder {
           /* WebKit browsers */
           color: white;
@@ -279,10 +282,62 @@ $font-family-sans-serif: "Open Sans", sans-serif;
           color: white;
         }
         input {
-          color:white;
-          font-size:16px;
+          color: white;
+          font-size: 16px;
         }
       }
+    }
+  }
+}
+.home-content {
+  padding-top: 20px!important;
+  .next-up-arrow {
+    width: 130px;
+  }
+  .class {
+    .courseCode {
+      font-size: 30px;
+      color: black;
+    }
+    .grey-arrow {
+      position: absolute;
+      top: 0;
+      right: 20px;
+      width: 30px;
+    }
+    .details {
+      margin-top: 15px;
+    }
+  }
+  .event {
+    .date {
+      float: left;
+      width: 50%;
+      border: none;
+      border-right: 1px solid #C7C7CC;
+      border-radius: 0!important;
+      .month {
+        text-transform: uppercase;
+        color: #d0021b;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-weight: 700;
+        margin-top: -10px;
+      }
+      .date {
+        margin: 15px auto;
+        text-align: center;
+        border-right: none;
+        width: 100%;
+        font-size: 60px;
+        color: black;
+      }
+    }
+    .details {
+      float: left;
+      width: 50%;
+      border: none;
     }
   }
 }

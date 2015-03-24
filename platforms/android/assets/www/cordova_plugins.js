@@ -28,7 +28,8 @@ module.exports.metadata =
     "com.ionic.keyboard": "1.0.4",
     "org.apache.cordova.console": "0.2.13",
     "org.apache.cordova.device": "0.3.0",
-    "org.apache.cordova.statusbar": "0.1.10"
+    "org.apache.cordova.statusbar": "0.1.10",
+    "org.crosswalk.engine": "0.0.1-dev"
 }
 // BOTTOM OF METADATA
 });
