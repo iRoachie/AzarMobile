@@ -45,6 +45,17 @@ angular.module('starter.controllers', [])
   };
 })
 
+.service('saveNews', function() {
+  var savedItem;
+  this.setClickedItem = function(item) {
+    this.savedItem = item;
+  }
+
+  this.getClickItem = function() {
+    return this.savedItem;
+  }
+})
+
 .factory("newsItems", ['$firebaseArray',
   function($firebaseArray) {
     var ref = new Firebase('https://kyletest.firebaseio.com/news');
@@ -52,16 +63,23 @@ angular.module('starter.controllers', [])
   }
 ])
 
-.controller('NewsCtrl', ['$scope', 'newsItems', function($scope, newsItems) {
-    $scope.items = newsItems;
+.controller('NewsCtrl', ['$scope', 'newsItems', 'saveNews', function($scope, newsItems, saveNews) {
+  $scope.items = newsItems;
 
-    $scope.detail = function() {
-      return newsItems;
-    }
+  $scope.detail = function(item) {
+    saveNews.setClickedItem(item);
   }
-])
+}])
 
+.controller('NewsDetailCtrl', ['$scope', 'saveNews', function($scope, saveNews) {
+  var item = saveNews.getClickItem();
 
+  $scope.category = item.category;
+  $scope.title = item.title;
+  $scope.sender = item.sender;
+  $scope.date = item.date;
+  $scope.message = item.message;
+}])
 
 .controller('CourseCtrl', function($scope, $ionicModal) {
   // Create the login modal that we will use later

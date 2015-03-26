@@ -53,7 +53,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase'])
     views: {
       'menuContent': {
         templateUrl: "templates/news-item.html",
-        // controller: "NewsDetailCtrl"
+        controller: "NewsDetailCtrl"
       }
     }
   })
