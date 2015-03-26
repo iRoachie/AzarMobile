@@ -2,8 +2,7 @@ angular.module('starter.controllers', [])
 
 .controller('AppCtrl', function($scope, $ionicModal, $ionicPopup) {
   // Form data for the login modal
-  $scope.loginData = {
-  };
+  $scope.loginData = {};
 
   // Create the login modal that we will use later
   $ionicModal.fromTemplateUrl('templates/login.html', {
@@ -26,25 +25,42 @@ angular.module('starter.controllers', [])
 
   //Log in failed
   $scope.showAlert = function() {
-   var alertPopup = $ionicPopup.alert({
-     title: 'Error',
-     template: 'Please enter both fields.'
-   });
-   alertPopup.then(function(res) {
-     $scope.loginData.username = "";
-     $scope.loginData.password = "";
-   });
- };
+    var alertPopup = $ionicPopup.alert({
+      title: 'Error',
+      template: 'Please enter both fields.'
+    });
+    alertPopup.then(function(res) {
+      $scope.loginData.username = "";
+      $scope.loginData.password = "";
+    });
+  };
 
   // Perform the login action when the user submits the login form
   $scope.doLogin = function() {
     console.log('Doing login', $scope.loginData);
 
-    if(!$scope.loginData.username || !$scope.loginData.password) {
+    if (!$scope.loginData.username || !$scope.loginData.password) {
       $scope.showAlert();
     }
   };
 })
+
+.factory("newsItems", ['$firebaseArray',
+  function($firebaseArray) {
+    var ref = new Firebase('https://kyletest.firebaseio.com/news');
+    return $firebaseArray(ref);
+  }
+])
+
+.controller('NewsCtrl', ['$scope', 'newsItems', function($scope, newsItems) {
+    $scope.items = newsItems;
+
+    $scope.detail = function() {
+      return newsItems;
+    }
+  }
+])
+
 
 
 .controller('CourseCtrl', function($scope, $ionicModal) {

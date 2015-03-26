@@ -36,7 +36,8 @@ ion-content {
 .list-item-header {
   font-weight: 700 !important;
   font-size: 11px !important;
-  color: #444 !important; }
+  color: #444 !important;
+  text-transform: uppercase; }
 
 .list-item-title {
   font-family: "Open Sans", sans-serif;

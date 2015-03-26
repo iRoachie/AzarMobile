@@ -1,0 +1,18 @@
+{
+  "news": {
+    "news1": {
+      "title": "Cafeteria Closes in Response to Students Rioting",
+      "category": "Cafeteria",
+      "sender": "VP Student Administration",
+      "date": "February 18, 2015",
+      "message": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam neque enim, placerat eu leo quis, convallis iaculis turpis. Phasellus vitae sem vitae sem sagittis consectetur. Curabitur eu pharetra nibh. Integer sed faucibus ipsum. Ut convallis auctor placerat.Vestibulum rutrum dapibus ligula sit amet vulputate."
+    },
+    "news2": {
+      "title": "New Opening Hours",
+      "category": "Main News",
+      "sender": "VP Academic Administration",
+      "date": "March 10, 2015",
+      "message": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam neque enim, placerat eu leo quis, convallis iaculis turpis. Phasellus vitae sem vitae sem sagittis consectetur. Curabitur eu pharetra nibh. Integer sed faucibus ipsum. Ut convallis auctor placerat.Vestibulum rutrum dapibus ligula sit amet vulputate."
+    }
+  }
+}
