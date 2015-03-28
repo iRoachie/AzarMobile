@@ -29,7 +29,7 @@
 
     <ion-list ng-controller="NewsCtrl">
       <a class="item item-icon-left item-icon-right" ng-click="detail({{item}})" ng-repeat="item in items|limitTo:2" href="#app/news/news-item">
-        <i class="icon ion-fork"></i>
+        <i ng-class='iconClass(item.category)'></i>
         <p class="list-item-header" ng-model="category">{{item.category}}</p>
         <p class="list-item-title" ng-model="title">{{item.title}}</p>
         <i class="icon ion-ios-arrow-right news-arrow"></i>

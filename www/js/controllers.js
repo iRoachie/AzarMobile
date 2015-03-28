@@ -69,6 +69,20 @@ angular.module('starter.controllers', [])
   $scope.detail = function(item) {
     saveNews.setClickedItem(item);
   }
+
+  $scope.iconClass = function(category) {
+    switch (category) {
+      case "Cafeteria":
+        return "icon ion-fork"
+        break;
+      case "Graduate":
+        return "icon ion-university"
+        break;
+      default:
+        return "icon ion-clipboard"
+        break;
+    }
+  }
 }])
 
 .controller('NewsDetailCtrl', ['$scope', 'saveNews', function($scope, saveNews) {
