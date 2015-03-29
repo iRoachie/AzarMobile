@@ -58,7 +58,7 @@ angular.module('starter.controllers', [])
 
 .factory("newsItems", ['$firebaseArray',
   function($firebaseArray) {
-    var ref = new Firebase('https://azarmobiledev.firebaseio.com/news');
+    var ref = new Firebase('https://kyletest.firebaseio.com/news');
     return $firebaseArray(ref);
   }
 ])

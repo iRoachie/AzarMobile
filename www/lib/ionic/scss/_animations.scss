@@ -1,7 +1,5 @@
-
 // Slide up from the bottom, used for modals
 // -------------------------------
-
 .slide-in-up {
   @include translate3d(0, 100%, 0);
 }
@@ -13,68 +11,80 @@
 .slide-in-up > .ng-enter-active {
   @include translate3d(0, 0, 0);
 }
-
 .slide-in-up.ng-leave,
 .slide-in-up > .ng-leave {
   @include transition(all ease-in-out 250ms);
 }
-
 // New news item animation
-.repeated-item.ng-enter, .repeated-item.ng-move {
-  -webkit-transition:0.5s linear all;
-  -moz-transition:0.5s linear all;
-  -o-transition:0.5s linear all;
-  transition:0.5s linear all;
-  opacity:0;
+.repeated-item.ng-enter {
+  -webkit-transition: 0.5s linear all;
+  opacity: 0;
 }
-
-.repeated-item.ng-enter.ng-enter-active,
-.repeated-item.ng-move.ng-move-active {
-  opacity:1;
+.repeated-item.ng-enter.ng-enter-active {
+  opacity: 1;
 }
-
 .repeated-item.ng-leave {
-  -webkit-animation:0.5s my_animation;
-  -moz-animation:0.5s my_animation;
-  -o-animation:0.5s my_animation;
-  animation:0.5s my_animation;
+  -webkit-animation: 0.5s my_animation;
 }
-
-@keyframes my_animation {
-  from { opacity:1; }
-  to { opacity:0; }
-}
-
 @-webkit-keyframes my_animation {
-  from { opacity:1; }
-  to { opacity:0; }
+  from {
+    height: 44px;
+    padding: 16px 54px;
+    opacity: 1;
+    border: 1;
+    margin: -1px;
+  }
+  to {
+    height: 0;
+    padding: 0 54px;
+    opacity: 0;
+    border: 1px;
+    margin: 0;
+  }
 }
-
-
-
 // Scale Out
 // Scale from hero (1 in this case) to zero
 // -------------------------------
-
 @-webkit-keyframes scaleOut {
-  from { -webkit-transform: scale(1); opacity: 1; }
-  to { -webkit-transform: scale(0.8); opacity: 0; }
+  from {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(0.8);
+    opacity: 0;
+  }
 }
 @keyframes scaleOut {
-  from { transform: scale(1); opacity: 1; }
-  to { transform: scale(0.8); opacity: 0; }
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.8);
+    opacity: 0;
+  }
 }
-
-
 // Super Scale In
 // Scale from super (1.x) to duper (1 in this case)
 // -------------------------------
-
 @-webkit-keyframes superScaleIn {
-  from { -webkit-transform: scale(1.2); opacity: 0; }
-  to { -webkit-transform: scale(1); opacity: 1 }
+  from {
+    -webkit-transform: scale(1.2);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
 }
 @keyframes superScaleIn {
-  from { transform: scale(1.2); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+  from {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
