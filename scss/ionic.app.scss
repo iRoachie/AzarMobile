@@ -342,6 +342,41 @@ ion-content {
     }
   }
 }
+// New news item animation
+.news-repeat.ng-enter,
+.news-repeat.ng-leave {
+  -webkit-transition: 400ms linear all;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space:nowrap;
+}
+
+.news-repeat.ng-leave.ng-leave-active,
+.news-repeat.ng-enter {
+  opacity: 0;
+  height: 0;
+  padding-top:0;
+  padding-bottom:0;
+}
+
+.news-repeat.ng-enter.ng-enter-active,
+.news-repeat.ng-leave {
+  opacity: 1;
+   height: 44px;
+   padding:16px 54px;
+}
+
+// @keyframes my_animation {
+//   from { opacity:1; }
+//   to { opacity:0; }
+// }
+//
+// @-webkit-keyframes my_animation {
+//   from { opacity:1; }
+//   to { opacity:0; }
+// }
 
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
