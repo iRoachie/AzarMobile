@@ -276,25 +276,6 @@ ion-content {
     width: 50%;
     border: none; }
 
-.news-repeat.ng-enter, .news-repeat.ng-leave {
-  -webkit-transition: 400ms linear all;
-  position: relative;
-  display: block;
-  overflow: hidden;
-  text-overflow: clip;
-  white-space: nowrap; }
-
-.news-repeat.ng-leave.ng-leave-active, .news-repeat.ng-enter {
-  opacity: 0;
-  height: 0;
-  padding-top: 0;
-  padding-bottom: 0; }
-
-.news-repeat.ng-enter.ng-enter-active, .news-repeat.ng-leave {
-  opacity: 1;
-  height: 44px;
-  padding: 16px 54px; }
-
 /*!
   Ionicons, v2.0.1
   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
@@ -7750,6 +7731,36 @@ a.button {
 .slide-in-up.ng-leave, .slide-in-up > .ng-leave {
   -webkit-transition: all ease-in-out 250ms;
   transition: all ease-in-out 250ms; }
+
+.repeated-item.ng-enter, .repeated-item.ng-move {
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+  opacity: 0; }
+
+.repeated-item.ng-enter.ng-enter-active, .repeated-item.ng-move.ng-move-active {
+  opacity: 1; }
+
+.repeated-item.ng-leave {
+  -webkit-animation: 0.5s my_animation;
+  -moz-animation: 0.5s my_animation;
+  -o-animation: 0.5s my_animation;
+  animation: 0.5s my_animation; }
+
+@keyframes my_animation {
+  from {
+    opacity: 1; }
+
+  to {
+    opacity: 0; } }
+
+@-webkit-keyframes my_animation {
+  from {
+    opacity: 1; }
+
+  to {
+    opacity: 0; } }
 
 @-webkit-keyframes scaleOut {
   from {
