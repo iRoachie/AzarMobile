@@ -1,10 +1,10 @@
 <ion-view view-title="News">
   <ion-content>
     <ion-list>
-      <a class="item item-icon-left item-icon-right" href="#app/news/news-item">
-        <i class="icon ion-fork"></i>
-        <p class="list-item-header">CAFETERIA</p>
-        <p class="list-item-title">Student Riots on campus</p>
+      <a class="item item-icon-left item-icon-right repeated-item" ng-click="detail({{item}})" ng-repeat="item in items" href="#app/news/news-item">
+        <i ng-class='iconClass(item.category)'></i>
+        <p class="list-item-header" ng-model="category">{{item.category}}</p>
+        <p class="list-item-title" ng-model="title">{{item.title}}</p>
         <i class="icon ion-ios-arrow-right news-arrow"></i>
       </a>
     </ion-list>
