@@ -34,6 +34,7 @@ angular.module('starter.controllers', [])
       $scope.loginData.password = "";
     });
   };
+  
 
   // Perform the login action when the user submits the login form
   $scope.doLogin = function() {
