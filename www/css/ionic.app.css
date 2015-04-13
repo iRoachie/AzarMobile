@@ -105,35 +105,78 @@ ion-content {
 
 .schedule-page {
   background-color: white; }
-  .schedule-page .schedule-item {
-    padding-left: 110px; }
-    .schedule-page .schedule-item .time {
+  .schedule-page .separator {
+    height: 500px;
+    position: absolute;
+    width: 1px;
+    background-color: #E9E9E9;
+    top: 156px;
+    left: 31px;
+    z-index: 4; }
+  .schedule-page .dateBlock {
+    border-bottom: 1px dashed;
+    border-bottom-color: #4a90e2; }
+    .schedule-page .dateBlock .image {
+      height: 150px;
+      width: 100%; }
+    .schedule-page .dateBlock .date {
       position: absolute;
-      left: 25px;
-      top: 6px; }
-    .schedule-page .schedule-item .separator {
-      height: 54px;
+      font-size: 70px;
+      top: 70px;
+      left: 30px;
+      color: #4a90e2; }
+    .schedule-page .dateBlock .day {
       position: absolute;
-      width: 1px;
-      background-color: #909094;
-      top: 0;
-      left: 95px; }
-    .schedule-page .schedule-item .circle {
+      font-size: 30px;
+      top: 60px;
+      left: 84px;
+      color: #4a90e2; }
+    .schedule-page .dateBlock .month {
       position: absolute;
+      font-size: 12px;
+      top: 90px;
+      left: 85px;
+      color: #939290;
+      font-weight: 600;
+      text-transform: uppercase; }
+  .schedule-page .events > .list {
+    padding-top: 20px; }
+  .schedule-page .itemBlock {
+    display: inline-block; }
+    .schedule-page .itemBlock .circle {
+      position: relative;
       border-radius: 50%;
       background-color: white;
-      border: 1px solid #909094;
-      width: 20px;
-      height: 20px;
-      left: 85px; }
-    .schedule-page .schedule-item .color {
-      height: 54px;
-      min-width: 1px;
-      width: 16px;
-      margin-left: -10px;
-      margin-top: -10px;
+      border: 2px solid #EB8B6D;
+      width: 15px;
+      height: 15px;
+      left: 24px;
+      float: left;
+      top: 15px;
+      z-index: 4; }
+    .schedule-page .itemBlock .circle1 {
+      position: relative;
+      border-radius: 50%;
+      background-color: white;
+      border: 2px solid #4a90e2;
+      width: 15px;
+      height: 15px;
+      left: 24px;
+      float: left;
+      top: 15px;
+      z-index: 4; }
+    .schedule-page .itemBlock .schedule-item {
       border: none;
-      padding: 0; }
+      padding-left: 110px;
+      font-size: 14px;
+      font-weight: 600;
+      float: left; }
+      .schedule-page .itemBlock .schedule-item .time {
+        position: absolute;
+        left: 50px;
+        top: 16px;
+        font-size: inherit;
+        color: black; }
 
 .courseInfo {
   padding-top: 0 !important;
