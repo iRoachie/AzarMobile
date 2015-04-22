@@ -44,6 +44,7 @@
 		F8D5CF018F844B36A2C0AE0F /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF609959D69490DB9E7A132 /* CDVLogger.m */; };
 		BDA89E8C9B9E400C8E4A126F /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = A42985209F57490BB978F8E7 /* CDVDevice.m */; };
 		130AD2FDA7464512B1905589 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C843A3207D9442486606414 /* CDVStatusBar.m */; };
+		DB0A65FB18054B3293F8F30B /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7142314E3A4ACF853E270E /* CDVSplashScreen.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,8 @@
 		C00496BD5EDA4DCE9C566320 /* CDVDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVDevice.h"; path = "org.apache.cordova.device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		9C843A3207D9442486606414 /* CDVStatusBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVStatusBar.m"; path = "org.apache.cordova.statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		B9CF1770C01F46AC943B4C36 /* CDVStatusBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVStatusBar.h"; path = "org.apache.cordova.statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		EC7142314E3A4ACF853E270E /* CDVSplashScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVSplashScreen.m"; path = "org.apache.cordova.splashscreen/CDVSplashScreen.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		564255FA13F144B5916C64CB /* CDVSplashScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVSplashScreen.h"; path = "org.apache.cordova.splashscreen/CDVSplashScreen.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +230,8 @@
 				C00496BD5EDA4DCE9C566320 /* CDVDevice.h */,
 				9C843A3207D9442486606414 /* CDVStatusBar.m */,
 				B9CF1770C01F46AC943B4C36 /* CDVStatusBar.h */,
+				EC7142314E3A4ACF853E270E /* CDVSplashScreen.m */,
+				564255FA13F144B5916C64CB /* CDVSplashScreen.h */,
 			);
 			name = Plugins;
 			path = "AzarMobile/Plugins";
@@ -416,6 +421,7 @@
 				F8D5CF018F844B36A2C0AE0F /* CDVLogger.m in Sources */,
 				BDA89E8C9B9E400C8E4A126F /* CDVDevice.m in Sources */,
 				130AD2FDA7464512B1905589 /* CDVStatusBar.m in Sources */,
+				DB0A65FB18054B3293F8F30B /* CDVSplashScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

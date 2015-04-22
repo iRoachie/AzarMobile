@@ -16,3 +16,65 @@
 2015-04-12 23:21:53.440 AzarMobile[71814:1875112] [CDVTimer][TotalPluginStartup] 16.228974ms
 2015-04-12 23:21:53.694 AzarMobile[71814:1875112] Resetting plugins due to page load.
 2015-04-12 23:21:54.470 AzarMobile[71814:1875112] Finished load of: file:///Users/kyle/Library/Developer/CoreSimulator/Devices/D5B3C65D-4C8B-4B96-AE54-3F0D61E3F985/data/Containers/Bundle/Application/7415FA69-7887-4512-BB52-D86A0CFC2E79/AzarMobile.app/www/index.html#/app/home
+2015-04-20 17:55:02.399 AzarMobile[5751:82055] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/kyle/Library/Developer/CoreSimulator/Devices/D5B3C65D-4C8B-4B96-AE54-3F0D61E3F985/data/Containers/Data/Application/315918E9-6D81-44BC-82E7-D7ED24B4C4B8/Library/Cookies/Cookies.binarycookies
+2015-04-20 17:55:02.488 AzarMobile[5751:82055] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-20 17:55:02.488 AzarMobile[5751:82055] Multi-tasking -> Device: YES, App: YES
+2015-04-20 17:55:02.490 AzarMobile[5751:82055] Unlimited access to network resources
+2015-04-20 17:55:02.555 AzarMobile[5751:82055] [CDVTimer][keyboard] 0.050008ms
+2015-04-20 17:55:02.570 AzarMobile[5751:82055] [CDVTimer][statusbar] 15.111029ms
+2015-04-20 17:55:02.570 AzarMobile[5751:82055] [CDVTimer][TotalPluginStartup] 15.426993ms
+2015-04-20 17:55:02.684 AzarMobile[5751:82055] Resetting plugins due to page load.
+2015-04-20 17:55:03.504 AzarMobile[5751:82055] Finished load of: file:///Users/kyle/Library/Developer/CoreSimulator/Devices/D5B3C65D-4C8B-4B96-AE54-3F0D61E3F985/data/Containers/Bundle/Application/75B1699A-091A-4950-A440-F3A0FAA9BF10/AzarMobile.app/www/index.html#/app/home
+2015-04-21 14:02:41.284 AzarMobile[3936:264564] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/kyle/Library/Developer/CoreSimulator/Devices/DF7C919C-501B-478A-8F88-7C0EA1F50D44/data/Containers/Data/Application/F5322B52-A650-462D-9CE6-FDCE0743E89A/Library/Cookies/Cookies.binarycookies
+2015-04-21 14:02:41.562 AzarMobile[3936:264564] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-21 14:02:41.562 AzarMobile[3936:264564] Multi-tasking -> Device: YES, App: YES
+2015-04-21 14:02:41.579 AzarMobile[3936:264564] Unlimited access to network resources
+2015-04-21 14:02:41.940 AzarMobile[3936:264564] [CDVTimer][keyboard] 0.061989ms
+2015-04-21 14:02:42.061 AzarMobile[3936:264564] [CDVTimer][statusbar] 120.521009ms
+2015-04-21 14:02:42.061 AzarMobile[3936:264564] [CDVTimer][TotalPluginStartup] 121.406972ms
+2015-04-21 14:02:42.216 AzarMobile[3936:264564] Resetting plugins due to page load.
+2015-04-21 14:02:43.191 AzarMobile[3936:264564] Finished load of: file:///Users/kyle/Library/Developer/CoreSimulator/Devices/DF7C919C-501B-478A-8F88-7C0EA1F50D44/data/Containers/Bundle/Application/67798D5B-C2B3-43DF-A9D5-8187543A3675/AzarMobile.app/www/index.html#/app/home
+2015-04-21 15:07:56.283 AzarMobile[6799:346868] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/kyle/Library/Developer/CoreSimulator/Devices/DF7C919C-501B-478A-8F88-7C0EA1F50D44/data/Containers/Data/Application/42071D2A-0320-4E18-B292-AD9EA83B6B36/Library/Cookies/Cookies.binarycookies
+2015-04-21 15:07:56.504 AzarMobile[6799:346868] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-21 15:07:56.504 AzarMobile[6799:346868] Multi-tasking -> Device: YES, App: YES
+2015-04-21 15:07:56.506 AzarMobile[6799:346868] Unlimited access to network resources
+2015-04-21 15:07:56.580 AzarMobile[6799:346868] [CDVTimer][keyboard] 0.051022ms
+2015-04-21 15:07:56.609 AzarMobile[6799:346868] [CDVTimer][statusbar] 28.804004ms
+2015-04-21 15:07:56.622 AzarMobile[6799:346868] [CDVTimer][splashscreen] 12.952030ms
+2015-04-21 15:07:56.622 AzarMobile[6799:346868] [CDVTimer][TotalPluginStartup] 42.753994ms
+2015-04-21 15:07:56.729 AzarMobile[6799:346868] Resetting plugins due to page load.
+2015-04-21 15:07:57.671 AzarMobile[6799:346868] Finished load of: file:///Users/kyle/Library/Developer/CoreSimulator/Devices/DF7C919C-501B-478A-8F88-7C0EA1F50D44/data/Containers/Bundle/Application/0C176A0F-96F5-43E7-9159-713B21C8E29F/AzarMobile.app/www/index.html#/app/home
+2015-04-21 15:35:00.128 AzarMobile[6799:366750] Terminating since there is no system app.
+2015-04-22 18:28:01.020 AzarMobile[2028:30919] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/kyle/Library/Developer/CoreSimulator/Devices/D5B3C65D-4C8B-4B96-AE54-3F0D61E3F985/data/Containers/Data/Application/21A29D18-A0F8-4901-A848-83742AC5F61B/Library/Cookies/Cookies.binarycookies
+2015-04-22 18:28:01.153 AzarMobile[2028:30919] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-22 18:28:01.153 AzarMobile[2028:30919] Multi-tasking -> Device: YES, App: YES
+2015-04-22 18:28:01.171 AzarMobile[2028:30919] Unlimited access to network resources
+2015-04-22 18:28:01.489 AzarMobile[2028:30919] [CDVTimer][keyboard] 0.072002ms
+2015-04-22 18:28:01.588 AzarMobile[2028:30919] [CDVTimer][statusbar] 98.604023ms
+2015-04-22 18:28:01.599 AzarMobile[2028:30919] [CDVTimer][splashscreen] 11.533022ms
+2015-04-22 18:28:01.600 AzarMobile[2028:30919] [CDVTimer][TotalPluginStartup] 111.092985ms
+2015-04-22 18:28:01.707 AzarMobile[2028:30919] Resetting plugins due to page load.
+2015-04-22 18:28:02.841 AzarMobile[2028:30919] Finished load of: http://10.10.12.96:8100/#/app/home
+2015-04-22 18:28:41.556 AzarMobile[2028:30919] Resetting plugins due to page load.
+2015-04-22 18:28:42.490 AzarMobile[2028:30919] Finished load of: http://10.10.12.96:8100/#/app/events
+2015-04-22 18:28:45.266 AzarMobile[2028:30919] Resetting plugins due to page load.
+2015-04-22 18:28:45.640 AzarMobile[2028:30919] Finished load of: http://10.10.12.96:8100/#/app/events
+2015-04-22 18:29:08.897 AzarMobile[2028:30919] Resetting plugins due to page load.
+2015-04-22 18:29:09.423 AzarMobile[2028:30919] Finished load of: http://10.10.12.96:8100/#/app/events
+2015-04-22 18:30:02.267 AzarMobile[2028:30919] Resetting plugins due to page load.
+2015-04-22 18:30:03.062 AzarMobile[2028:30919] Finished load of: http://10.10.12.96:8100/#/app/events
+2015-04-22 18:30:32.320 AzarMobile[2028:30919] Resetting plugins due to page load.
+2015-04-22 18:30:35.161 AzarMobile[2028:30919] Finished load of: http://10.10.12.96:8100/#/app/events
+2015-04-22 18:30:50.414 AzarMobile[2028:30919] Resetting plugins due to page load.
+2015-04-22 18:30:50.905 AzarMobile[2028:30919] Finished load of: http://10.10.12.96:8100/#/app/events
+2015-04-22 18:32:07.580 AzarMobile[2313:34279] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/kyle/Library/Developer/CoreSimulator/Devices/D5B3C65D-4C8B-4B96-AE54-3F0D61E3F985/data/Containers/Data/Application/5D4A0C8E-7298-4B70-BEAA-B703406207CF/Library/Cookies/Cookies.binarycookies
+2015-04-22 18:32:07.701 AzarMobile[2313:34279] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-22 18:32:07.701 AzarMobile[2313:34279] Multi-tasking -> Device: YES, App: YES
+2015-04-22 18:32:07.703 AzarMobile[2313:34279] Unlimited access to network resources
+2015-04-22 18:32:07.768 AzarMobile[2313:34279] [CDVTimer][keyboard] 0.056982ms
+2015-04-22 18:32:07.781 AzarMobile[2313:34279] [CDVTimer][statusbar] 12.618005ms
+2015-04-22 18:32:07.784 AzarMobile[2313:34279] [CDVTimer][splashscreen] 3.305972ms
+2015-04-22 18:32:07.785 AzarMobile[2313:34279] [CDVTimer][TotalPluginStartup] 16.359985ms
+2015-04-22 18:32:07.966 AzarMobile[2313:34279] Resetting plugins due to page load.
+2015-04-22 18:32:09.097 AzarMobile[2313:34279] Finished load of: http://10.10.12.96:8100/#/app/home
+2015-04-22 18:32:38.124 AzarMobile[2313:34558] Terminating since there is no system app.

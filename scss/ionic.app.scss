@@ -400,6 +400,40 @@ ion-content {
   }
 }
 
+.eventsContent{
+  .event {
+    .date {
+      float: left;
+      width: 50%;
+      border: none;
+      border-right: 1px solid #C7C7CC;
+      border-radius: 0!important;
+      .month {
+        text-transform: uppercase;
+        color: #d0021b;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-weight: 700;
+        margin-top: -10px;
+      }
+      .date {
+        margin: 15px auto;
+        text-align: center;
+        border-right: none;
+        width: 100%;
+        font-size: 60px;
+        color: black;
+      }
+    }
+    .details {
+      float: left;
+      width: 50%;
+      border: none;
+    }
+  }
+}
+
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic

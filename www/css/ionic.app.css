@@ -319,6 +319,32 @@ ion-content {
     width: 50%;
     border: none; }
 
+.eventsContent .event .date {
+  float: left;
+  width: 50%;
+  border: none;
+  border-right: 1px solid #C7C7CC;
+  border-radius: 0 !important; }
+  .eventsContent .event .date .month {
+    text-transform: uppercase;
+    color: #d0021b;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: 700;
+    margin-top: -10px; }
+  .eventsContent .event .date .date {
+    margin: 15px auto;
+    text-align: center;
+    border-right: none;
+    width: 100%;
+    font-size: 60px;
+    color: black; }
+.eventsContent .event .details {
+  float: left;
+  width: 50%;
+  border: none; }
+
 /*!
   Ionicons, v2.0.1
   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
