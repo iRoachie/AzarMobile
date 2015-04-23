@@ -4,7 +4,7 @@
 
     <div ng-controller="CourseCtrl">
       <div class="card class"  ng-repeat="course in courses">
-        <div class="item item-text-wrap">
+        <div class="item item-text-wrap" ng-click="courseInfo({{course}})">
           <img ng-src="img/ribbon-grey.png" class="grey-arrow">
           <p class="courseCode">{{course.code}}</p>
           <p class="details">
