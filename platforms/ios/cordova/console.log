@@ -78,6 +78,7 @@
 2015-04-22 18:32:07.966 AzarMobile[2313:34279] Resetting plugins due to page load.
 2015-04-22 18:32:09.097 AzarMobile[2313:34279] Finished load of: http://10.10.12.96:8100/#/app/home
 2015-04-22 18:32:38.124 AzarMobile[2313:34558] Terminating since there is no system app.
+<<<<<<< Updated upstream
 2015-04-23 01:34:54.308 AzarMobile[20682:411740] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/kyle/Library/Developer/CoreSimulator/Devices/D5B3C65D-4C8B-4B96-AE54-3F0D61E3F985/data/Containers/Data/Application/55A7A77B-572B-4B95-A21D-1A735FE7AE79/Library/Cookies/Cookies.binarycookies
 2015-04-23 01:34:54.383 AzarMobile[20682:411740] Apache Cordova native platform version 3.8.0 is starting.
 2015-04-23 01:34:54.384 AzarMobile[20682:411740] Multi-tasking -> Device: YES, App: YES
@@ -138,3 +139,5 @@ triggerMouseEvent@file:///Users/kyle/Library/Developer/CoreSimulator/Devices/D5B
 tapClick@file:///Users/kyle/Library/Developer/CoreSimulator/Devices/D5B3C65D-4C8B-4B96-AE54-3F0D61E3F985/data/Containers/Bundle/Application/A40CD5F1-E0E4-41A8-A833-75D5BA05DB67/AzarMobile.app/www/lib/ionic/js/ionic.bundle.js:2842:20
 tapTouchEnd@file:///Users/kyle/Library/Developer/CoreSimulator/Devices/D5B3C65D-4C8B-4B96-AE54-3F0D61E3F985/data/Containers/Bundle/Application/A40CD5F1-E0E4-41A8-A833-75D5BA05DB67/AzarMobile.app/www/lib/ionic/js/ionic.bundle.js:2960:13
 2015-04-23 01:38:56.967 AzarMobile[20952:415616] Terminating since there is no system app.
+=======
+>>>>>>> Stashed changes
