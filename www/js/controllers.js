@@ -52,8 +52,13 @@ angular.module('starter.controllers', [])
         console.log("Authenticated successfully with payload:", authData);
         $scope.closeLogin();
 
-        if($scope.request="Grades") {
-          $scope.showGrades();
+        switch ($scope.request) {
+          case "Grades":
+            $scope.showGrades();
+            break;
+          case "Schedule":
+            $scope.showSchedule();
+            break;
         }
       }
     });
@@ -67,8 +72,20 @@ angular.module('starter.controllers', [])
       $state.go('app.grades')
 
     } else {
-      console.log("User is logged out");
       $scope.request = "Grades";
+      $scope.login();
+    }
+  };
+
+  $scope.showSchedule = function() {
+    var ref = new Firebase("https://azarmobiledev.firebaseio.com");
+    var authData = ref.getAuth();
+
+    if (authData) {
+      $state.go('app.schedule')
+
+    } else {
+      $scope.request = "Schedule";
       $scope.login();
     }
   };
@@ -98,7 +115,37 @@ angular.module('starter.controllers', [])
     var authData = ref.getAuth();
 
     ref = new Firebase('https://azarmobiledev.firebaseio.com/users/' + authData.uid + "/grades");
-     return $firebaseArray(ref);
+    return $firebaseArray(ref);
+  }
+])
+
+.factory("courses", ['$firebaseArray',
+  function($firebaseArray) {
+    (function() {
+      var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+      var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+      Date.prototype.getMonthName = function() {
+        return months[this.getMonth()];
+      };
+      Date.prototype.getDayName = function() {
+        return days[this.getDay()];
+      };
+    })();
+
+    var now = new Date();
+
+    var day = now.getDayName();
+
+    var ref = new Firebase("https://azarmobiledev.firebaseio.com");
+    var authData = ref.getAuth();
+
+    var userCoursesRef = new Firebase('https://azarmobiledev.firebaseio.com/users/' + authData.uid + "/courses");
+    console.log($firebaseArray(userCoursesRef));
+
+    userCoursesRef.child("0").child('times').orderByChild("day").equalTo(day).on("child_added", function(snapshot) {});
+    return $firebaseArray(userCoursesRef);
   }
 ])
 
@@ -134,7 +181,38 @@ angular.module('starter.controllers', [])
   $scope.message = item.message;
 }])
 
-.controller('CourseCtrl', function($scope, $ionicModal) {
+.controller('GradesCtrl', function($scope, grades) {
+  $scope.semesters = grades;
+})
+
+.controller('CourseCtrl', function($scope, $ionicModal, courses) {
+  $scope.courses = courses;
+
+  (function() {
+    var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+    var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+    Date.prototype.getMonthName = function() {
+      return months[this.getMonth()];
+    };
+    Date.prototype.getDayName = function() {
+      return days[this.getDay()];
+    };
+  })();
+
+  var now = new Date();
+
+  var day = now.getDayName();
+  var month = now.getMonthName();
+
+  $scope.course = ""
+
+  $scope.date = new Date().getDate();
+  $scope.day = day;
+  $scope.month = month;
+  $scope.year = new Date().getFullYear();
+
   // Create the login modal that we will use later
   $ionicModal.fromTemplateUrl('templates/course.html', {
     scope: $scope
@@ -148,12 +226,8 @@ angular.module('starter.controllers', [])
   };
 
   // Open the login modal
-  $scope.courseInfo = function() {
+  $scope.courseInfo = function(course) {
+    $scope.course = course;
     $scope.modal.show();
   };
-})
-
-.controller('GradesCtrl', function($scope,grades) {
-    console.log(grades);
-    $scope.semesters = grades;
 })
