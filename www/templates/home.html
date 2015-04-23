@@ -2,14 +2,16 @@
   <ion-content class="home-content">
     <img ng-src="img/next-up.png" class="next-up-arrow">
 
-    <div class="card class">
-      <div class="item item-text-wrap">
-        <img ng-src="img/ribbon-grey.png" class="grey-arrow">
-        <p class="courseCode">Math 101</p>
-        <p class="details">
-          NBA
-          <br/> 3:05 - 4:20
-        </p>
+    <div ng-controller="CourseCtrl">
+      <div class="card class"  ng-repeat="course in courses">
+        <div class="item item-text-wrap">
+          <img ng-src="img/ribbon-grey.png" class="grey-arrow">
+          <p class="courseCode">{{course.code}}</p>
+          <p class="details">
+            {{course.location}}
+            <p ng-repeat="time in course.times|limitTo:1"> {{time.time}} </p>
+          </p>
+        </div>
       </div>
     </div>
 
