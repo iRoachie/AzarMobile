@@ -97,7 +97,8 @@ ion-content {
     width: 10%; }
 
 .settingsList > .list {
-  margin-top: 20px; }
+  padding-top: 20px;
+  background-color: white; }
 
 .title-center {
   font-weight: 600 !important; }

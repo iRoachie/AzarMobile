@@ -120,7 +120,8 @@ ion-content {
   }
 }
 .settingsList>.list {
-  margin-top:20px;
+  padding-top:20px;
+  background-color:white;
 }
 .title-center {
   font-weight: 600!important;
@@ -129,9 +130,6 @@ ion-content {
   color: $positive!important;
   font-weight: 700!important;
 }
-
-
-
 .schedule-page {
   background-color: white;
   .separator {

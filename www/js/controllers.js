@@ -7,23 +7,23 @@ angular.module('starter.controllers', [])
   $scope.request = "";
 
   function authDataCallback(authData) {
-      if (authData) {
-        console.log("User " + authData.uid + " is logged in with " + authData.provider);
-        ref = new Firebase('https://azarmobiledev.firebaseio.com/users/' + authData.uid);
-        ref.on("value", function(snapshot) {
-          $scope.firstName = snapshot.val().firstName;
-          $scope.lastName = snapshot.val().lastName;
-          $scope.major = snapshot.val().major;
-          $scope.minor = snapshot.val().minor;
-          $scope.id = snapshot.val().id;
-        })
+    if (authData) {
+      console.log("User " + authData.uid + " is logged in with " + authData.provider);
+      ref = new Firebase('https://azarmobiledev.firebaseio.com/users/' + authData.uid);
+      ref.on("value", function(snapshot) {
+        $scope.firstName = snapshot.val().firstName;
+        $scope.lastName = snapshot.val().lastName;
+        $scope.major = snapshot.val().major;
+        $scope.minor = snapshot.val().minor;
+        $scope.id = snapshot.val().id;
+      })
 
-      } else {
-        console.log("User is logged out");
-        $scope.firstName = "Guest";
-        $scope.lastName = "";
-      }
+    } else {
+      console.log("User is logged out");
+      $scope.firstName = "Guest";
+      $scope.lastName = "";
     }
+  }
 
   // Register the callback to be fired every time auth state changes
   var ref = new Firebase("https://azarmobiledev.firebaseio.com");
@@ -38,9 +38,9 @@ angular.module('starter.controllers', [])
   });
 
   $scope.showProfile = function() {
-    if(ref.getAuth()) {
+    if (ref.getAuth()) {
       $state.go('app.profile')
-    }else {
+    } else {
       $scope.modal.show();
       $scope.request = "Profile";
     }
@@ -188,11 +188,15 @@ angular.module('starter.controllers', [])
     var ref = new Firebase("https://azarmobiledev.firebaseio.com");
     var authData = ref.getAuth();
 
-    var userCoursesRef = new Firebase('https://azarmobiledev.firebaseio.com/users/' + authData.uid + "/courses");
-    console.log($firebaseArray(userCoursesRef));
+    if (authData) {
+      var userCoursesRef = new Firebase('https://azarmobiledev.firebaseio.com/users/' + authData.uid + "/courses");
+      console.log($firebaseArray(userCoursesRef));
 
-    userCoursesRef.child("0").child('times').orderByChild("day").equalTo(day).on("child_added", function(snapshot) {});
-    return $firebaseArray(userCoursesRef);
+      userCoursesRef.child("0").child('times').orderByChild("day").equalTo(day).on("child_added", function(snapshot) {});
+      return $firebaseArray(userCoursesRef);
+    }
+
+    return "";
   }
 ])
 
@@ -281,5 +285,5 @@ angular.module('starter.controllers', [])
 
 .controller('EventsCtrl', function($scope, events) {
   $scope.events = events;
-  
+
 })
