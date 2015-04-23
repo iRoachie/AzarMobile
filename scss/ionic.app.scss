@@ -126,40 +126,97 @@ ion-content {
   color: $positive!important;
   font-weight: 700!important;
 }
+
+
+
 .schedule-page {
   background-color: white;
-  .schedule-item {
-    padding-left: 110px;
-    .time {
-      position: absolute;
-      left: 25px;
-      top: 6px;
+  .separator {
+    height: 500px;
+    position: absolute;
+    width: 1px;
+    background-color: #E9E9E9;
+    top: 156px;
+    left: 31px;
+    z-index:4
+  }
+  .dateBlock {
+    border-bottom:1px dashed;
+    border-bottom-color:$positive;
+    .image {
+      height:150px;
+      width:100%;
     }
-    .separator {
-      height: 54px;
-      position: absolute;
-      width: 1px;
-      background-color: $light-grey;
-      top: 0;
-      left: 95px;
+    .date {
+      position:absolute;
+      font-size:70px;
+      top:70px;
+      left: 30px;
+      color:$positive;
     }
+    .day {
+      position:absolute;
+      font-size:30px;
+      top:60px;
+      left: 84px;
+      color:$positive;
+    }
+    .month {
+      position:absolute;
+      font-size:12px;
+      top:90px;
+      left: 85px;
+      color:#939290;
+      font-weight:600;
+      text-transform:uppercase;
+    }
+  }
+
+  .events>.list {
+    padding-top:20px;
+  }
+
+  .itemBlock {
+    display:inline-block;
     .circle {
-      position: absolute;
+      position: relative;
       border-radius: 50%;
       background-color: white;
-      border: 1px solid $light-grey;
-      width: 20px;
-      height: 20px;
-      left: 85px;
+      border: 2px solid #EB8B6D;
+      width: 15px;
+      height: 15px;
+      left:24px;
+      float:left;
+      top:15px;
+      z-index:4;
     }
-    .color {
-      height: 54px;
-      min-width: 1px;
-      width: 16px;
-      margin-left: -10px;
-      margin-top: -10px;
+    .circle1 {
+      position: relative;
+      border-radius: 50%;
+      background-color: white;
+      border: 2px solid $positive;
+      width: 15px;
+      height: 15px;
+      left:24px;
+      float:left;
+      top:15px;
+      z-index:4;
+    }
+
+    .schedule-item {
       border: none;
-      padding: 0;
+      padding-left: 110px;
+      font-size:14px;
+      font-weight:600;
+      float:left;
+
+      .time {
+        position: absolute;
+        left: 50px;
+        top: 16px;
+        font-size:inherit;
+        color:black;
+      }
     }
   }
 }
@@ -310,6 +367,40 @@ ion-content {
       margin-top: 15px;
     }
   }
+  .event {
+    .date {
+      float: left;
+      width: 50%;
+      border: none;
+      border-right: 1px solid #C7C7CC;
+      border-radius: 0!important;
+      .month {
+        text-transform: uppercase;
+        color: #d0021b;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-weight: 700;
+        margin-top: -10px;
+      }
+      .date {
+        margin: 15px auto;
+        text-align: center;
+        border-right: none;
+        width: 100%;
+        font-size: 60px;
+        color: black;
+      }
+    }
+    .details {
+      float: left;
+      width: 50%;
+      border: none;
+    }
+  }
+}
+
+.eventsContent{
   .event {
     .date {
       float: left;
