@@ -139,5 +139,19 @@ triggerMouseEvent@file:///Users/kyle/Library/Developer/CoreSimulator/Devices/D5B
 tapClick@file:///Users/kyle/Library/Developer/CoreSimulator/Devices/D5B3C65D-4C8B-4B96-AE54-3F0D61E3F985/data/Containers/Bundle/Application/A40CD5F1-E0E4-41A8-A833-75D5BA05DB67/AzarMobile.app/www/lib/ionic/js/ionic.bundle.js:2842:20
 tapTouchEnd@file:///Users/kyle/Library/Developer/CoreSimulator/Devices/D5B3C65D-4C8B-4B96-AE54-3F0D61E3F985/data/Containers/Bundle/Application/A40CD5F1-E0E4-41A8-A833-75D5BA05DB67/AzarMobile.app/www/lib/ionic/js/ionic.bundle.js:2960:13
 2015-04-23 01:38:56.967 AzarMobile[20952:415616] Terminating since there is no system app.
+<<<<<<< HEAD
 =======
 >>>>>>> Stashed changes
+=======
+2015-04-23 12:04:41.547 AzarMobile[42781:700239] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/kyle/Library/Developer/CoreSimulator/Devices/D5B3C65D-4C8B-4B96-AE54-3F0D61E3F985/data/Containers/Data/Application/4B435498-CDEE-4EBB-82A9-BB8E574819A3/Library/Cookies/Cookies.binarycookies
+2015-04-23 12:04:41.667 AzarMobile[42781:700239] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-23 12:04:41.667 AzarMobile[42781:700239] Multi-tasking -> Device: YES, App: YES
+2015-04-23 12:04:41.683 AzarMobile[42781:700239] Unlimited access to network resources
+2015-04-23 12:04:41.961 AzarMobile[42781:700239] [CDVTimer][keyboard] 0.052035ms
+2015-04-23 12:04:42.038 AzarMobile[42781:700239] [CDVTimer][statusbar] 76.506019ms
+2015-04-23 12:04:42.056 AzarMobile[42781:700239] [CDVTimer][splashscreen] 18.664002ms
+2015-04-23 12:04:42.057 AzarMobile[42781:700239] [CDVTimer][TotalPluginStartup] 95.888972ms
+2015-04-23 12:04:42.161 AzarMobile[42781:700239] Resetting plugins due to page load.
+2015-04-23 12:04:42.992 AzarMobile[42781:700239] Finished load of: file:///Users/kyle/Library/Developer/CoreSimulator/Devices/D5B3C65D-4C8B-4B96-AE54-3F0D61E3F985/data/Containers/Bundle/Application/65CC2BF4-B2CB-448D-A358-ECCDBD7AD666/AzarMobile.app/www/index.html#/app/home
+2015-04-23 12:05:25.166 AzarMobile[42781:701415] Terminating since there is no system app.
+>>>>>>> kyle

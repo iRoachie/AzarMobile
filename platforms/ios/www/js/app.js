@@ -71,7 +71,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase', 'ngAnimat
     url: "/grades",
     views: {
       'menuContent': {
-        templateUrl: "templates/grades.html"
+        templateUrl: "templates/grades.html",
+        controller:"GradesCtrl"
       }
     }
   })

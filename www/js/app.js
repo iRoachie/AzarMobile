@@ -91,6 +91,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase', 'ngAnimat
       views: {
         'menuContent': {
           templateUrl: "templates/settings.html",
+          controller: "AppCtrl"
         }
       }
     })
@@ -100,6 +101,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase', 'ngAnimat
     views: {
       'menuContent': {
         templateUrl: "templates/profile.html",
+        controller: "AppCtrl"
       }
     }
   });
