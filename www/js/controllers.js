@@ -92,6 +92,16 @@ angular.module('starter.controllers', [])
   }
 ])
 
+.factory("grades", ['$firebaseArray',
+  function($firebaseArray) {
+    var ref = new Firebase("https://azarmobiledev.firebaseio.com");
+    var authData = ref.getAuth();
+
+    ref = new Firebase('https://azarmobiledev.firebaseio.com/users/' + authData.uid + "/grades");
+     return $firebaseArray(ref);
+  }
+])
+
 .controller('NewsCtrl', ['$scope', 'newsItems', 'saveNews', function($scope, newsItems, saveNews) {
   $scope.items = newsItems;
 
@@ -143,7 +153,7 @@ angular.module('starter.controllers', [])
   };
 })
 
-
-.controller('GradesCtrl', function($scope) {
-
+.controller('GradesCtrl', function($scope,grades) {
+    console.log(grades);
+    $scope.semesters = grades;
 })
