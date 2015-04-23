@@ -62,7 +62,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase', 'ngAnimat
     url: "/events",
     views: {
       'menuContent': {
-        templateUrl: "templates/events.html"
+        templateUrl: "templates/events.html",
+        controller: "EventsCtrl"
       }
     }
   })

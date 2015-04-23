@@ -159,6 +159,13 @@ angular.module('starter.controllers', [])
   }
 ])
 
+.factory("events", ['$firebaseArray',
+  function($firebaseArray) {
+    ref = new Firebase('https://azarmobiledev.firebaseio.com/events');
+    return $firebaseArray(ref);
+  }
+])
+
 .factory("courses", ['$firebaseArray',
   function($firebaseArray) {
     (function() {
@@ -270,4 +277,9 @@ angular.module('starter.controllers', [])
     $scope.course = course;
     $scope.modal.show();
   };
+})
+
+.controller('EventsCtrl', function($scope, events) {
+  $scope.events = events;
+  
 })

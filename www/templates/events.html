@@ -1,22 +1,26 @@
 <ion-view view-title="Events">
   <ion-content>
-    <div class="list card ecard">
-      <div class="item item-avatar">
-        <img ng-src="img/advlogo.png" class="logo">
-        <h2>General Conference 2015</h2>
-        <p>July 2 – 11, 2015</p>
-        <p>San Antinio, Texas</p>
-      </div>
-      <div class="item item-body">
-        <img class="full-image" src="img/gcsession.png">
-        <p>
-          Welcome to the world church family of Seventh-day Adventists, and especially to our delegates and others who will be attending the 2015 General Conference Session in San Antonio, Texas from July 2-11.
-        </p>
-      </div>
-      <div class="item tabs tabs-secondary tabs-icon-center bar bar-positive">
-        <a class="tab-item" href="#">
-          <i class="icon ion-share"></i> Share
-        </a>
+    <div class="list">
+      <div class="card ecard" ng-repeat="event in events">
+        <div class="item item-avatar">
+          <img ng-src="{{event.logo}}" class="logo">
+          <h2>{{event.name}}</h2>
+          <p>{{event.date}}</p>
+          <p>{{event.venue}}</p>
+          <p>{{event.startTime}} - {{event.endTime}}</p>
+        </div>
+        <div class="item item-body">
+          <img class="full-image" src="{{event.image}}">
+          <p>
+            {{event.memo}}
+          </p>
+        </div>
+        <div class="item tabs tabs-secondary tabs-icon-center bar bar-positive">
+          <a class="tab-item" href="#">
+            <i class="icon ion-share"></i>
+            Share
+          </a>
+        </div>
       </div>
     </div>
   </ion-content>
