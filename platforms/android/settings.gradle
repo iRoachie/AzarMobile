@@ -1,0 +1,4 @@
+// GENERATED FILE - DO NOT EDIT
+include ":"
+include ":CordovaLib"
+include ":cordova-plugin-crosswalk-webview:azarmobile708695-xwalk_core_library"

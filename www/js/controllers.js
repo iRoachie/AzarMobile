@@ -1,8 +1,10 @@
 angular.module('starter.controllers', [])
 
-.controller('AppCtrl', function($scope, $ionicModal, $ionicPopup) {
+.controller('AppCtrl', function($scope, $ionicModal, $ionicPopup, $state, $window) {
   // Form data for the login modal
   $scope.loginData = {};
+
+  $scope.request = "";
 
   // Create the login modal that we will use later
   $ionicModal.fromTemplateUrl('templates/login.html', {
@@ -19,7 +21,7 @@ angular.module('starter.controllers', [])
   // Open the login modal
   $scope.login = function() {
     $scope.modal.show();
-    $scope.loginData.username = "";
+    $scope.loginData.email = "";
     $scope.loginData.password = "";
   };
 
@@ -27,10 +29,10 @@ angular.module('starter.controllers', [])
   $scope.showAlert = function() {
     var alertPopup = $ionicPopup.alert({
       title: 'Error',
-      template: 'Please enter both fields.'
+      template: 'Email address or password is incorrect.'
     });
     alertPopup.then(function(res) {
-      $scope.loginData.username = "";
+      $scope.loginData.email = "";
       $scope.loginData.password = "";
     });
   };
@@ -38,9 +40,36 @@ angular.module('starter.controllers', [])
   // Perform the login action when the user submits the login form
   $scope.doLogin = function() {
     console.log('Doing login', $scope.loginData);
+    var ref = new Firebase("https://azarmobiledev.firebaseio.com");
 
-    if (!$scope.loginData.username || !$scope.loginData.password) {
-      $scope.showAlert();
+    ref.authWithPassword({
+      email: $scope.loginData.email,
+      password: $scope.loginData.password
+    }, function(error, authData) {
+      if (error) {
+        $scope.showAlert();
+      } else {
+        console.log("Authenticated successfully with payload:", authData);
+        $scope.closeLogin();
+
+        if($scope.request="Grades") {
+          $scope.showGrades();
+        }
+      }
+    });
+  };
+
+  $scope.showGrades = function() {
+    var ref = new Firebase("https://azarmobiledev.firebaseio.com");
+    var authData = ref.getAuth();
+
+    if (authData) {
+      $state.go('app.grades')
+
+    } else {
+      console.log("User is logged out");
+      $scope.request = "Grades";
+      $scope.login();
     }
   };
 })
@@ -60,6 +89,16 @@ angular.module('starter.controllers', [])
   function($firebaseArray) {
     var ref = new Firebase('https://azarmobiledev.firebaseio.com/news');
     return $firebaseArray(ref);
+  }
+])
+
+.factory("grades", ['$firebaseArray',
+  function($firebaseArray) {
+    var ref = new Firebase("https://azarmobiledev.firebaseio.com");
+    var authData = ref.getAuth();
+
+    ref = new Firebase('https://azarmobiledev.firebaseio.com/users/' + authData.uid + "/grades");
+     return $firebaseArray(ref);
   }
 ])
 
@@ -112,4 +151,9 @@ angular.module('starter.controllers', [])
   $scope.courseInfo = function() {
     $scope.modal.show();
   };
+})
+
+.controller('GradesCtrl', function($scope,grades) {
+    console.log(grades);
+    $scope.semesters = grades;
 })
