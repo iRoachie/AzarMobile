@@ -1,23 +1,27 @@
 <ion-view view-title="Events">
-<<<<<<< HEAD
   <ion-content>
-    <div class="bar bar-footer bar-balanced">
-      <div class="title">Footer</div>
-=======
-  <ion-content class="eventsContent">
-    <div class="card event">
-      <div class="item item-text-wrap date">
-        <p class="month">
-          March
-        </p>
-        <p class="date">
-          9
-        </p>
+    <div class="list">
+      <div class="card ecard" ng-repeat="event in events">
+        <div class="item item-avatar">
+          <img ng-src="{{event.logo}}" class="logo">
+          <h2>{{event.name}}</h2>
+          <p>{{event.date}}</p>
+          <p>{{event.venue}}</p>
+          <p>{{event.startTime}} - {{event.endTime}}</p>
+        </div>
+        <div class="item item-body">
+          <img class="full-image" src="{{event.image}}">
+          <p>
+            {{event.memo}}
+          </p>
+        </div>
+        <div class="item tabs tabs-secondary tabs-icon-center bar bar-positive">
+          <a class="tab-item" href="#">
+            <i class="icon ion-share"></i>
+            Share
+          </a>
+        </div>
       </div>
-      <div class="item item-text-wrap details">
-        Another Event Twice Again
-      </div>
->>>>>>> kyle
     </div>
   </ion-content>
 </ion-view>

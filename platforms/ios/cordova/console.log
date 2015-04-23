@@ -155,3 +155,115 @@ tapTouchEnd@file:///Users/kyle/Library/Developer/CoreSimulator/Devices/D5B3C65D-
 2015-04-23 12:04:42.992 AzarMobile[42781:700239] Finished load of: file:///Users/kyle/Library/Developer/CoreSimulator/Devices/D5B3C65D-4C8B-4B96-AE54-3F0D61E3F985/data/Containers/Bundle/Application/65CC2BF4-B2CB-448D-A358-ECCDBD7AD666/AzarMobile.app/www/index.html#/app/home
 2015-04-23 12:05:25.166 AzarMobile[42781:701415] Terminating since there is no system app.
 >>>>>>> kyle
+2015-04-23 15:25:14.491 AzarMobile[58641:998642] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/kyle/Library/Developer/CoreSimulator/Devices/D5B3C65D-4C8B-4B96-AE54-3F0D61E3F985/data/Containers/Data/Application/A95724B9-D595-4D49-8679-C5A269CA5225/Library/Cookies/Cookies.binarycookies
+2015-04-23 15:25:14.693 AzarMobile[58641:998642] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-23 15:25:14.693 AzarMobile[58641:998642] Multi-tasking -> Device: YES, App: YES
+2015-04-23 15:25:14.709 AzarMobile[58641:998642] Unlimited access to network resources
+2015-04-23 15:25:15.001 AzarMobile[58641:998642] [CDVTimer][keyboard] 0.057995ms
+2015-04-23 15:25:15.071 AzarMobile[58641:998642] [CDVTimer][statusbar] 69.796026ms
+2015-04-23 15:25:15.091 AzarMobile[58641:998642] [CDVTimer][splashscreen] 20.024955ms
+2015-04-23 15:25:15.091 AzarMobile[58641:998642] [CDVTimer][TotalPluginStartup] 90.548992ms
+2015-04-23 15:25:15.200 AzarMobile[58641:998642] Resetting plugins due to page load.
+2015-04-23 15:25:16.039 AzarMobile[58641:998642] Finished load of: file:///Users/kyle/Library/Developer/CoreSimulator/Devices/D5B3C65D-4C8B-4B96-AE54-3F0D61E3F985/data/Containers/Bundle/Application/78A0EA21-37B5-4591-8954-FEF6AC05B0BA/AzarMobile.app/www/index.html#/app/home
+2015-04-23 15:25:16.163 AzarMobile[58641:998642] User is logged out
+2015-04-23 16:24:19.456 AzarMobile[908:6053] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/kyle/Library/Developer/CoreSimulator/Devices/D5B3C65D-4C8B-4B96-AE54-3F0D61E3F985/data/Containers/Data/Application/E52D1A10-915B-48E5-85D6-1D3BF396E250/Library/Cookies/Cookies.binarycookies
+2015-04-23 16:24:19.596 AzarMobile[908:6053] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-23 16:24:19.596 AzarMobile[908:6053] Multi-tasking -> Device: YES, App: YES
+2015-04-23 16:24:19.610 AzarMobile[908:6053] Unlimited access to network resources
+2015-04-23 16:24:19.873 AzarMobile[908:6053] [CDVTimer][keyboard] 0.061989ms
+2015-04-23 16:24:19.940 AzarMobile[908:6053] [CDVTimer][statusbar] 67.180991ms
+2015-04-23 16:24:19.959 AzarMobile[908:6053] [CDVTimer][splashscreen] 18.476009ms
+2015-04-23 16:24:19.959 AzarMobile[908:6053] [CDVTimer][TotalPluginStartup] 86.322010ms
+2015-04-23 16:24:20.064 AzarMobile[908:6053] Resetting plugins due to page load.
+2015-04-23 16:24:21.225 AzarMobile[908:6053] Finished load of: file:///Users/kyle/Library/Developer/CoreSimulator/Devices/D5B3C65D-4C8B-4B96-AE54-3F0D61E3F985/data/Containers/Bundle/Application/1B815A81-76C9-4557-8EDB-0BE46D505267/AzarMobile.app/www/index.html#/app/home
+2015-04-23 16:24:21.390 AzarMobile[908:6053] User is logged out
+2015-04-23 16:24:27.440 AzarMobile[908:6053] CDVWebViewDelegate: Unexpected didFinish while waiting for load start.
+2015-04-23 16:25:13.498 AzarMobile[908:6053] Doing login [object Object]
+2015-04-23 16:25:18.857 AzarMobile[908:6053] User simplelogin:1 is logged in with password
+2015-04-23 16:25:18.857 AzarMobile[908:6053] Authenticated successfully with payload: [object Object]
+2015-04-23 16:25:27.475 AzarMobile[908:6053] CDVWebViewDelegate: Navigation started when state=1
+2015-04-23 16:25:27.475 AzarMobile[908:6053] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-04-23 16:26:32.376 AzarMobile[908:7900] Terminating since there is no system app.
+2015-04-23 16:36:42.955 AzarMobile[1182:15618] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/kyle/Library/Developer/CoreSimulator/Devices/D5B3C65D-4C8B-4B96-AE54-3F0D61E3F985/data/Containers/Data/Application/01B4CE53-03A1-4BDD-9DE2-386330055827/Library/Cookies/Cookies.binarycookies
+2015-04-23 16:36:43.078 AzarMobile[1182:15618] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-23 16:36:43.078 AzarMobile[1182:15618] Multi-tasking -> Device: YES, App: YES
+2015-04-23 16:36:43.080 AzarMobile[1182:15618] Unlimited access to network resources
+2015-04-23 16:36:43.152 AzarMobile[1182:15618] [CDVTimer][keyboard] 0.055015ms
+2015-04-23 16:36:43.167 AzarMobile[1182:15618] [CDVTimer][statusbar] 14.756024ms
+2015-04-23 16:36:43.171 AzarMobile[1182:15618] [CDVTimer][splashscreen] 3.409028ms
+2015-04-23 16:36:43.171 AzarMobile[1182:15618] [CDVTimer][TotalPluginStartup] 18.693984ms
+2015-04-23 16:36:43.332 AzarMobile[1182:15618] Resetting plugins due to page load.
+2015-04-23 16:36:44.367 AzarMobile[1182:15618] Finished load of: file:///Users/kyle/Library/Developer/CoreSimulator/Devices/D5B3C65D-4C8B-4B96-AE54-3F0D61E3F985/data/Containers/Bundle/Application/FF7D1148-4F34-4DF3-89F7-F27D724E62E9/AzarMobile.app/www/index.html#/app/home
+2015-04-23 16:36:44.505 AzarMobile[1182:15618] User simplelogin:1 is logged in with password
+2015-04-23 16:36:44.506 AzarMobile[1182:15618] []
+2015-04-23 16:36:45.152 AzarMobile[1182:15618] WARN: Storing data using array indices in Firebase can result in unexpected behavior. See https://www.firebase.com/docs/web/guide/understanding-data.html#section-arrays-in-firebase for more information.
+2015-04-23 16:36:45.152 AzarMobile[1182:15618] WARN: Storing data using array indices in Firebase can result in unexpected behavior. See https://www.firebase.com/docs/web/guide/understanding-data.html#section-arrays-in-firebase for more information.
+2015-04-23 16:36:53.641 AzarMobile[1182:15618] User simplelogin:1 is logged in with password
+2015-04-23 16:36:54.835 AzarMobile[1182:15618] User is logged out
+2015-04-23 16:36:54.835 AzarMobile[1182:15618] User is logged out
+2015-04-23 16:39:12.667 AzarMobile[1331:18538] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/kyle/Library/Developer/CoreSimulator/Devices/D5B3C65D-4C8B-4B96-AE54-3F0D61E3F985/data/Containers/Data/Application/CA3424AD-B4E2-485A-B287-8D12D14520C4/Library/Cookies/Cookies.binarycookies
+2015-04-23 16:39:12.799 AzarMobile[1331:18538] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-23 16:39:12.799 AzarMobile[1331:18538] Multi-tasking -> Device: YES, App: YES
+2015-04-23 16:39:12.801 AzarMobile[1331:18538] Unlimited access to network resources
+2015-04-23 16:39:12.867 AzarMobile[1331:18538] [CDVTimer][keyboard] 0.056982ms
+2015-04-23 16:39:12.881 AzarMobile[1331:18538] [CDVTimer][statusbar] 13.044000ms
+2015-04-23 16:39:12.884 AzarMobile[1331:18538] [CDVTimer][splashscreen] 3.239989ms
+2015-04-23 16:39:12.884 AzarMobile[1331:18538] [CDVTimer][TotalPluginStartup] 16.745985ms
+2015-04-23 16:39:13.059 AzarMobile[1331:18538] Resetting plugins due to page load.
+2015-04-23 16:39:16.147 AzarMobile[1331:18538] Finished load of: file:///Users/kyle/Library/Developer/CoreSimulator/Devices/D5B3C65D-4C8B-4B96-AE54-3F0D61E3F985/data/Containers/Bundle/Application/47C21BF5-C306-4E8E-B672-2D9988F0EEEA/AzarMobile.app/www/index.html#/app/home
+2015-04-23 16:39:16.254 AzarMobile[1331:18538] User is logged out
+2015-04-23 16:39:21.841 AzarMobile[1331:18538] User is logged out
+2015-04-23 16:39:37.587 AzarMobile[1331:18538] Doing login [object Object]
+2015-04-23 16:39:41.744 AzarMobile[1331:18538] User simplelogin:1 is logged in with password
+2015-04-23 16:39:41.744 AzarMobile[1331:18538] User simplelogin:1 is logged in with password
+2015-04-23 16:39:41.744 AzarMobile[1331:18538] Authenticated successfully with payload: [object Object]
+2015-04-23 16:41:53.653 AzarMobile[1511:22560] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/kyle/Library/Developer/CoreSimulator/Devices/D5B3C65D-4C8B-4B96-AE54-3F0D61E3F985/data/Containers/Data/Application/31CA48C6-A6F3-4E3F-9505-B36BDD9B486A/Library/Cookies/Cookies.binarycookies
+2015-04-23 16:41:53.764 AzarMobile[1511:22560] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-23 16:41:53.764 AzarMobile[1511:22560] Multi-tasking -> Device: YES, App: YES
+2015-04-23 16:41:53.765 AzarMobile[1511:22560] Unlimited access to network resources
+2015-04-23 16:41:53.834 AzarMobile[1511:22560] [CDVTimer][keyboard] 0.055015ms
+2015-04-23 16:41:53.851 AzarMobile[1511:22560] [CDVTimer][statusbar] 16.281009ms
+2015-04-23 16:41:53.854 AzarMobile[1511:22560] [CDVTimer][splashscreen] 2.982020ms
+2015-04-23 16:41:53.854 AzarMobile[1511:22560] [CDVTimer][TotalPluginStartup] 19.701004ms
+2015-04-23 16:41:54.015 AzarMobile[1511:22560] Resetting plugins due to page load.
+2015-04-23 16:41:55.143 AzarMobile[1511:22560] Finished load of: file:///Users/kyle/Library/Developer/CoreSimulator/Devices/D5B3C65D-4C8B-4B96-AE54-3F0D61E3F985/data/Containers/Bundle/Application/2F96627A-9663-4061-8E96-C54FEDA8AFAA/AzarMobile.app/www/index.html#/app/home
+2015-04-23 16:41:55.281 AzarMobile[1511:22560] User simplelogin:1 is logged in with password
+2015-04-23 16:41:55.281 AzarMobile[1511:22560] []
+2015-04-23 16:41:56.691 AzarMobile[1511:22560] WARN: Storing data using array indices in Firebase can result in unexpected behavior. See https://www.firebase.com/docs/web/guide/understanding-data.html#section-arrays-in-firebase for more information.
+2015-04-23 16:41:56.692 AzarMobile[1511:22560] WARN: Storing data using array indices in Firebase can result in unexpected behavior. See https://www.firebase.com/docs/web/guide/understanding-data.html#section-arrays-in-firebase for more information.
+2015-04-23 16:42:04.212 AzarMobile[1511:22560] User simplelogin:1 is logged in with password
+2015-04-23 16:42:05.504 AzarMobile[1511:22560] User simplelogin:1 is logged in with password
+2015-04-23 16:42:08.054 AzarMobile[1511:22560] User is logged out
+2015-04-23 16:42:08.054 AzarMobile[1511:22560] User is logged out
+2015-04-23 16:42:08.054 AzarMobile[1511:22560] User is logged out
+2015-04-23 16:43:19.596 AzarMobile[1682:24679] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/kyle/Library/Developer/CoreSimulator/Devices/D5B3C65D-4C8B-4B96-AE54-3F0D61E3F985/data/Containers/Data/Application/7647B736-121A-4A67-B914-F88AFBEECE13/Library/Cookies/Cookies.binarycookies
+2015-04-23 16:43:19.692 AzarMobile[1682:24679] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-23 16:43:19.692 AzarMobile[1682:24679] Multi-tasking -> Device: YES, App: YES
+2015-04-23 16:43:19.694 AzarMobile[1682:24679] Unlimited access to network resources
+2015-04-23 16:43:19.758 AzarMobile[1682:24679] [CDVTimer][keyboard] 0.048995ms
+2015-04-23 16:43:19.773 AzarMobile[1682:24679] [CDVTimer][statusbar] 14.856994ms
+2015-04-23 16:43:19.776 AzarMobile[1682:24679] [CDVTimer][splashscreen] 3.103018ms
+2015-04-23 16:43:19.776 AzarMobile[1682:24679] [CDVTimer][TotalPluginStartup] 18.381000ms
+2015-04-23 16:43:19.934 AzarMobile[1682:24679] Resetting plugins due to page load.
+2015-04-23 16:43:21.217 AzarMobile[1682:24679] Finished load of: file:///Users/kyle/Library/Developer/CoreSimulator/Devices/D5B3C65D-4C8B-4B96-AE54-3F0D61E3F985/data/Containers/Bundle/Application/63ADC67C-9D16-440A-A762-38CFE0C25FC2/AzarMobile.app/www/index.html#/app/home
+2015-04-23 16:43:21.357 AzarMobile[1682:24679] User is logged out
+2015-04-23 16:43:36.072 AzarMobile[1682:24679] Doing login [object Object]
+2015-04-23 16:43:37.900 AzarMobile[1682:24679] User simplelogin:1 is logged in with password
+2015-04-23 16:43:37.900 AzarMobile[1682:24679] Authenticated successfully with payload: [object Object]
+2015-04-23 17:03:02.483 AzarMobile[1899:46895] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/kyle/Library/Developer/CoreSimulator/Devices/D5B3C65D-4C8B-4B96-AE54-3F0D61E3F985/data/Containers/Data/Application/1C32B4BF-6E6A-4B35-867E-89603CE34CD2/Library/Cookies/Cookies.binarycookies
+2015-04-23 17:03:02.643 AzarMobile[1899:46895] Apache Cordova native platform version 3.8.0 is starting.
+2015-04-23 17:03:02.643 AzarMobile[1899:46895] Multi-tasking -> Device: YES, App: YES
+2015-04-23 17:03:02.645 AzarMobile[1899:46895] Unlimited access to network resources
+2015-04-23 17:03:02.714 AzarMobile[1899:46895] [CDVTimer][keyboard] 0.051022ms
+2015-04-23 17:03:02.736 AzarMobile[1899:46895] [CDVTimer][statusbar] 22.154987ms
+2015-04-23 17:03:02.741 AzarMobile[1899:46895] [CDVTimer][splashscreen] 5.059004ms
+2015-04-23 17:03:02.741 AzarMobile[1899:46895] [CDVTimer][TotalPluginStartup] 27.687967ms
+2015-04-23 17:03:02.864 AzarMobile[1899:46895] Resetting plugins due to page load.
+2015-04-23 17:03:03.612 AzarMobile[1899:46895] Finished load of: file:///Users/kyle/Library/Developer/CoreSimulator/Devices/D5B3C65D-4C8B-4B96-AE54-3F0D61E3F985/data/Containers/Bundle/Application/26AFE461-3931-4074-8080-CB310BF21D3F/AzarMobile.app/www/index.html#/app/home
+2015-04-23 17:03:03.751 AzarMobile[1899:46895] User simplelogin:1 is logged in with password
+2015-04-23 17:03:03.751 AzarMobile[1899:46895] []
+2015-04-23 17:03:06.785 AzarMobile[1899:46895] WARN: Storing data using array indices in Firebase can result in unexpected behavior. See https://www.firebase.com/docs/web/guide/understanding-data.html#section-arrays-in-firebase for more information.
+2015-04-23 17:03:06.785 AzarMobile[1899:46895] WARN: Storing data using array indices in Firebase can result in unexpected behavior. See https://www.firebase.com/docs/web/guide/understanding-data.html#section-arrays-in-firebase for more information.
+2015-04-23 17:03:12.636 AzarMobile[1899:46895] User simplelogin:1 is logged in with password
+2015-04-23 17:03:13.841 AzarMobile[1899:46895] User is logged out
+2015-04-23 17:03:13.842 AzarMobile[1899:46895] User is logged out

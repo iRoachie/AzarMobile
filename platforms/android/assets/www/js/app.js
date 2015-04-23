@@ -62,7 +62,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase', 'ngAnimat
     url: "/events",
     views: {
       'menuContent': {
-        templateUrl: "templates/events.html"
+        templateUrl: "templates/events.html",
+        controller: "EventsCtrl"
       }
     }
   })
@@ -71,7 +72,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase', 'ngAnimat
     url: "/grades",
     views: {
       'menuContent': {
-        templateUrl: "templates/grades.html"
+        templateUrl: "templates/grades.html",
+        controller:"GradesCtrl"
       }
     }
   })
@@ -90,6 +92,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase', 'ngAnimat
       views: {
         'menuContent': {
           templateUrl: "templates/settings.html",
+          controller: "AppCtrl"
         }
       }
     })
@@ -99,6 +102,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase', 'ngAnimat
     views: {
       'menuContent': {
         templateUrl: "templates/profile.html",
+        controller: "AppCtrl"
       }
     }
   });

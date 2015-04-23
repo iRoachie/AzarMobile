@@ -2,8 +2,8 @@
   <ion-content>
     <div id="name-block">
       <div id="names">
-        <p id="first">Kyle</p>
-        <p id="last">Roach</p>
+        <p id="first">{{firstName}}</p>
+        <p id="last">{{lastName}}</p>
       </div>
       <div id="settings-ribbon">
         <img ng-src="img/ribbon-grey.png">
@@ -16,7 +16,7 @@
         Major
       </ion-item>
       <ion-item>
-        BSc. Computer Science
+        {{major}}
       </ion-item>
 
       <!--  Minor-->
@@ -25,7 +25,7 @@
       </ion-item>
 
       <ion-item>
-        Music
+        {{minor}}
       </ion-item>
 
       <!--  ID Number-->
@@ -33,7 +33,7 @@
         ID Number
       </ion-item>
       <ion-item>
-        2010080427
+        {{id}}
       </ion-item>
     </ion-list>
   </ion-content>

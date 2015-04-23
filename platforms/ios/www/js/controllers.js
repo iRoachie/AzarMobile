@@ -6,6 +6,30 @@ angular.module('starter.controllers', [])
 
   $scope.request = "";
 
+  function authDataCallback(authData) {
+    if (authData) {
+      console.log("User " + authData.uid + " is logged in with " + authData.provider);
+      ref = new Firebase('https://azarmobiledev.firebaseio.com/users/' + authData.uid);
+      ref.on("value", function(snapshot) {
+        $scope.firstName = snapshot.val().firstName;
+        $scope.lastName = snapshot.val().lastName;
+        $scope.major = snapshot.val().major;
+        $scope.minor = snapshot.val().minor;
+        $scope.id = snapshot.val().id;
+      })
+
+    } else {
+      console.log("User is logged out");
+      $scope.firstName = "Guest";
+      $scope.lastName = "";
+    }
+  }
+
+  // Register the callback to be fired every time auth state changes
+  var ref = new Firebase("https://azarmobiledev.firebaseio.com");
+  var authData = ref.getAuth();
+  ref.onAuth(authDataCallback);
+
   // Create the login modal that we will use later
   $ionicModal.fromTemplateUrl('templates/login.html', {
     scope: $scope
@@ -13,9 +37,22 @@ angular.module('starter.controllers', [])
     $scope.modal = modal;
   });
 
+  $scope.showProfile = function() {
+    if (ref.getAuth()) {
+      $state.go('app.profile')
+    } else {
+      $scope.modal.show();
+      $scope.request = "Profile";
+    }
+  };
+
   // Triggered in the login modal to close it
   $scope.closeLogin = function() {
     $scope.modal.hide();
+  };
+
+  $scope.logOut = function() {
+    ref.unauth();
   };
 
   // Open the login modal
@@ -58,6 +95,9 @@ angular.module('starter.controllers', [])
             break;
           case "Schedule":
             $scope.showSchedule();
+            break;
+          case "Profile":
+            $scope.showProfile();
             break;
         }
       }
@@ -119,6 +159,13 @@ angular.module('starter.controllers', [])
   }
 ])
 
+.factory("events", ['$firebaseArray',
+  function($firebaseArray) {
+    ref = new Firebase('https://azarmobiledev.firebaseio.com/events');
+    return $firebaseArray(ref);
+  }
+])
+
 .factory("courses", ['$firebaseArray',
   function($firebaseArray) {
     (function() {
@@ -141,11 +188,14 @@ angular.module('starter.controllers', [])
     var ref = new Firebase("https://azarmobiledev.firebaseio.com");
     var authData = ref.getAuth();
 
-    var userCoursesRef = new Firebase('https://azarmobiledev.firebaseio.com/users/' + authData.uid + "/courses");
-    console.log($firebaseArray(userCoursesRef));
+    if (authData) {
+      var userCoursesRef = new Firebase('https://azarmobiledev.firebaseio.com/users/' + authData.uid + "/courses");
+      console.log($firebaseArray(userCoursesRef));
 
-    userCoursesRef.child("0").child('times').orderByChild("day").equalTo(day).on("child_added", function(snapshot) {});
-    return $firebaseArray(userCoursesRef);
+      userCoursesRef.child("0").child('times').orderByChild("day").equalTo(day).on("child_added", function(snapshot) {});
+      return $firebaseArray(userCoursesRef);
+    }
+    return "";
   }
 ])
 
@@ -185,8 +235,15 @@ angular.module('starter.controllers', [])
   $scope.semesters = grades;
 })
 
-.controller('CourseCtrl', function($scope, $ionicModal, courses) {
-  $scope.courses = courses;
+.controller('CourseCtrl', function($scope, $ionicModal, courses, $state) {
+
+  var ref = new Firebase("https://azarmobiledev.firebaseio.com");
+  var authData = ref.getAuth();
+  if (authData) {
+    $scope.courses = courses;
+  }else {
+  $scope.courses = "";
+}
 
   (function() {
     var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -230,4 +287,8 @@ angular.module('starter.controllers', [])
     $scope.course = course;
     $scope.modal.show();
   };
+})
+
+.controller('EventsCtrl', function($scope, events) {
+  $scope.events = events;
 })

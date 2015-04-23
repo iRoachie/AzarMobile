@@ -31,9 +31,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'firebase', 'ngAnimat
     })
     .state('app.home', {
       url: "/home",
+cache: "false",
       views: {
         'menuContent': {
-          templateUrl: "templates/home.html",
+          templateUrl: "templates/home.html"
         }
       }
     })

@@ -195,7 +195,6 @@ angular.module('starter.controllers', [])
       userCoursesRef.child("0").child('times').orderByChild("day").equalTo(day).on("child_added", function(snapshot) {});
       return $firebaseArray(userCoursesRef);
     }
-
     return "";
   }
 ])
@@ -236,8 +235,15 @@ angular.module('starter.controllers', [])
   $scope.semesters = grades;
 })
 
-.controller('CourseCtrl', function($scope, $ionicModal, courses) {
-  $scope.courses = courses;
+.controller('CourseCtrl', function($scope, $ionicModal, courses, $state) {
+
+  var ref = new Firebase("https://azarmobiledev.firebaseio.com");
+  var authData = ref.getAuth();
+  if (authData) {
+    $scope.courses = courses;
+  }else {
+  $scope.courses = "";
+}
 
   (function() {
     var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -285,5 +291,4 @@ angular.module('starter.controllers', [])
 
 .controller('EventsCtrl', function($scope, events) {
   $scope.events = events;
-
 })

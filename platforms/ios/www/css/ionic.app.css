@@ -96,6 +96,10 @@ ion-content {
   #name-block #settings-ribbon img {
     width: 10%; }
 
+.settingsList > .list {
+  padding-top: 20px;
+  background-color: white; }
+
 .title-center {
   font-weight: 600 !important; }
 

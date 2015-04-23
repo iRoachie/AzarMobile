@@ -2,30 +2,43 @@
   <ion-content class="home-content">
     <img ng-src="img/next-up.png" class="next-up-arrow">
 
-    <div class="card class">
-      <div class="item item-text-wrap">
-        <img ng-src="img/ribbon-grey.png" class="grey-arrow">
-        <p class="courseCode">Math 101</p>
-        <p class="details">
-          NBA
-          <br/> 3:05 - 4:20
-        </p>
+    <div ng-controller="CourseCtrl">
+      <div class="card class"  ng-repeat="course in courses">
+        <div class="item item-text-wrap" ng-click="courseInfo({{course}})">
+          <img ng-src="img/ribbon-grey.png" class="grey-arrow">
+          <p class="courseCode">{{course.code}}</p>
+          <p class="details">
+            {{course.location}}
+            <p ng-repeat="time in course.times|limitTo:1"> {{time.time}} </p>
+          </p>
+        </div>
       </div>
     </div>
 
-    <div class="card event">
-      <div class="item item-text-wrap date">
-        <p class="month">
-          March
-        </p>
-        <p class="date">
-          9
-        </p>
-      </div>
-      <div class="item item-text-wrap details">
-        Another Event Twice Again
+    <div ng-controller="EventsCtrl">
+      <div class="card ecard" ng-repeat="event in events|limitTo:1">
+        <div class="item item-avatar">
+          <img ng-src="{{event.logo}}" class="logo">
+          <h2>{{event.name}}</h2>
+          <p>{{event.date}}</p>
+          <p>{{event.venue}}</p>
+          <p>{{event.startTime}} - {{event.endTime}}</p>
+        </div>
+        <div class="item item-body">
+          <img class="full-image" ng-src="{{event.image}}">
+          <p>
+            {{event.memo}}
+          </p>
+        </div>
+        <div class="item tabs tabs-secondary tabs-icon-center bar bar-positive">
+          <a class="tab-item" href="#">
+            <i class="icon ion-share"></i>
+            Share
+          </a>
+        </div>
       </div>
     </div>
+
 
     <ion-list ng-controller="NewsCtrl">
       <a class="item item-icon-left item-icon-right repeated-item" ng-click="detail({{item}})" ng-repeat="item in items|limitTo:2" href="#app/news/news-item">

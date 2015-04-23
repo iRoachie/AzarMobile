@@ -96,6 +96,10 @@ ion-content {
   #name-block #settings-ribbon img {
     width: 10%; }
 
+.settingsList > .list {
+  padding-top: 20px;
+  background-color: white; }
+
 .title-center {
   font-weight: 600 !important; }
 
@@ -123,19 +127,19 @@ ion-content {
       position: absolute;
       font-size: 70px;
       top: 70px;
-      left: 30px;
+      left: 20px;
       color: #4a90e2; }
     .schedule-page .dateBlock .day {
       position: absolute;
       font-size: 30px;
       top: 60px;
-      left: 84px;
+      left: 110px;
       color: #4a90e2; }
     .schedule-page .dateBlock .month {
       position: absolute;
       font-size: 12px;
       top: 90px;
-      left: 85px;
+      left: 113px;
       color: #939290;
       font-weight: 600;
       text-transform: uppercase; }
