@@ -1,1 +1,23 @@
 /* Empty. Add your own CSS if you like */
+.ecard,
+.ecard>.item-avatar{
+    background-color:#FF6B35;
+}
+
+.item-avatar>h2
+{
+    color: azure;
+}
+
+.item-avatar>p
+{
+    color:brown;
+}
+.item-body>p
+{
+    color: #666;
+}
+.item>a
+{
+    color:azure; 
+}
