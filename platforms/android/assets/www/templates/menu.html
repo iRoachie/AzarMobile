@@ -1,0 +1,49 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-positive">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-content>
+      <div id="sidemenu-buff">
+        <img ng-src="img/logo.png" id="logo">
+      </div>
+      <ion-list>
+        <ion-item nav-clear menu-close href="#/app/home">
+          Home
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/news">
+          News
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/events">
+          Events
+        </ion-item>
+        <!-- <ion-item nav-clear menu-close href="#/app/grades">
+          Grades
+        </ion-item> -->
+        <ion-item nav-clear menu-close ng-click="login()">
+          Grades
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/schedule">
+          Schedule
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/settings">
+          Settings
+        </ion-item>
+        <!-- <ion-item nav-clear menu-close ng-click="login()">
+          Home
+        </ion-item> -->
+
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
