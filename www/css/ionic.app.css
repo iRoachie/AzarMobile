@@ -3618,7 +3618,7 @@ a.subdued {
     border-color: transparent;
     background: none;
     box-shadow: none;
-    color: cyan;
+    color: #fff;
     font-size: 17px; }
   .bar-positive .button.button-icon {
     border-color: transparent;
