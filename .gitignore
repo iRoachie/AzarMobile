@@ -1,6 +1,4 @@
-
 *.json
-
 bower.json
-
 bower_components/platform/platform.js
+node_modules/
